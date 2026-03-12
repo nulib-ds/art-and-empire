@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://localhost:5001/example.json",
+  "type": "Manifest",
+  "label": {"en": ["mica test"]},
+  "metadata": [{"label": {"en": ["Author"]}, "value": {"en": ["Unknown"]}}],
+  "items": [
+    {
+      "id": "https://manifest.storiiies-editor.cogapp.com/v3/3484i/canvases/1",
+      "type": "Canvas",
+      "height": 2712,
+      "width": 1990,
+      "items": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/3484i/pages/image/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/3484i/annotations/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.dc.library.northwestern.edu/iiif/3/5715132e-fa22-4de5-bdfb-a7784bfd51e0/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 2712,
+                "width": 1990,
+                "service": [
+                  {
+                    "id": "https://iiif.dc.library.northwestern.edu/iiif/3/5715132e-fa22-4de5-bdfb-a7784bfd51e0",
+                    "profile": "level2",
+                    "type": "ImageService2"
+                  }
+                ]
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/3484i/canvases/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/3484i/pages/text/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/3484i/pages/text/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "recto",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/3484i/canvases/1#xywh=-1024,-183,4038,3013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://manifest.storiiies-editor.cogapp.com/v3/f584j/canvases/1",
+      "type": "Canvas",
+      "height": 2714,
+      "width": 1991,
+      "items": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/f584j/pages/image/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/f584j/annotations/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.dc.library.northwestern.edu/iiif/3/4edb0eb5-2f9c-4fa0-9200-c16856221af4/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 2714,
+                "width": 1991,
+                "service": [
+                  {
+                    "id": "https://iiif.dc.library.northwestern.edu/iiif/3/4edb0eb5-2f9c-4fa0-9200-c16856221af4",
+                    "profile": "level2",
+                    "type": "ImageService2"
+                  }
+                ]
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/f584j/canvases/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/f584j/pages/text/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/f584j/pages/text/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "verso",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/f584j/canvases/1#xywh=-823,0,3637,2714"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {"en": ["<p>By Unknown</p>"]}
+}

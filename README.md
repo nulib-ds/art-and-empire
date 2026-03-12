@@ -20,13 +20,3 @@ This repository holds the course companion site for **Art & Empire**, an art his
 2. Run `npm run dev` to start the Canopy build script with hot reloading.
 3. Edit MDX under `content/` or tweak IIIF sources in `canopy.yml`. Saved changes appear immediately in the development server.
 4. Visit http://localhost:5001 in your browser.
-
-## Contributing Workflow
-
-Course staff and student curators usually work in feature branches for each exhibit or unit, focusing on:
-
-- Drafting exhibit copy and scholarly apparatus (timelines, bibliographies, meta-indices).
-- Importing new IIIF manifests or creating derived image sequences.
-- Refining layouts or Tailwind tokens to match the semester's visual identity.
-
-Open an issue if you need new components or run into Canopy bugs; upstream development lives in the central Canopy IIIF project. This repository tracks only the course-specific theme, content, and deployment configuration.
