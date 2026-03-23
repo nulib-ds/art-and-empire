@@ -5,6 +5,10 @@ referencedManifests:
   - https://api.dc.library.northwestern.edu/api/v2/works/213f2874-afca-452d-9bf3-ef0fe85a81ae?as=iiif
 ---
 
+<ExhibitExperience>
+<Container>
+<ExhibitPanel variant="intro">
+
 # Displaying Empire
 
 The term _Company Painting_ has come to stand in for works produced
@@ -14,16 +18,26 @@ eighteenth to the twentieth centuries. Works in this broad category range
 from depictions of customs and occupations, natural history subjects, and
 topographical paintings embodying the complex visual processes that shaped
 Britain’s reimagination of India as a colony and extension of its empire.
+
 This student-curated exhibit is based on a cache of East India
 Company-associated paintings, prints, and illustrated books in the Charles
 Deering McCormick Library's Special Collections and University Archives.
 
-<ButtonWrapper>
-  <Button href="/displaying-empire/3-artist-bios" label="Artist Biographies" />
-  <Button href="/timeline" label="Timeline" />
-</ButtonWrapper>
+<div className="exhibit-intro__actions">
+  <ButtonWrapper>
+    <Button
+      href="/displaying-empire/3-artist-bios"
+      label="Artist Biographies"
+    />
+    <Button href="/timeline" label="Timeline" />
+  </ButtonWrapper>
+</div>
 
-<Gallery>
+</ExhibitPanel>
+
+<ExhibitPanel variant="gallery">
+
+<Gallery popupSize="full">
    <Gallery.Item
     referencedManifests={[
       "https://api.dc.library.northwestern.edu/api/v2/works/2190b0b0-153c-4e14-8c09-06ce64b662d9?as=iiif",
@@ -70,7 +84,7 @@ Deering McCormick Library's Special Collections and University Archives.
     </GalleryContent>
   </Gallery.Item>
 
-  <Gallery.Item
+<Gallery.Item
   referencedManifests={[
     "https://api.dc.library.northwestern.edu/api/v2/works/009e37b7-5c36-4451-bafb-f1217f45877f?as=iiif",
   ]}
@@ -79,10 +93,20 @@ Deering McCormick Library's Special Collections and University Archives.
   description={
     <>
       <p>
-        An Indian woman is powerfully poised over her deceased husband’s burning pyre, with a fist raised. This exoticized image of "suttee" depicts European chronicling of an arcane funeral ritual recorded as an honorable death for a widow, sparing her from societal disapproval and the loss of certain social liberties. 
+        An Indian woman is powerfully poised over her deceased husband’s burning
+        pyre, with a fist raised. This exoticized image of "suttee" depicts
+        European chronicling of an arcane funeral ritual recorded as an
+        honorable death for a widow, sparing her from societal disapproval and
+        the loss of certain social liberties.
       </p>
       <p>
-        Published in Hamilton Moore’s 1785 <i>New & Complete Collection of Voyages & Travels,</i> this was one of many prints circulated within colonial British society that played upon the fear and fascination of unfamiliar and diverse cultural practices and lifestyles. This print shows how in early accounts of India, suttee became a spectacle for the British gaze and would continue to be portrayed by artists and travelers.
+        Published in Hamilton Moore’s 1785{" "}
+        <i>New & Complete Collection of Voyages & Travels,</i> this was one of
+        many prints circulated within colonial British society that played upon
+        the fear and fascination of unfamiliar and diverse cultural practices
+        and lifestyles. This print shows how in early accounts of India, suttee
+        became a spectacle for the British gaze and would continue to be
+        portrayed by artists and travelers.
       </p>
     </>
   }
@@ -97,7 +121,16 @@ Deering McCormick Library's Special Collections and University Archives.
         <dt>Date</dt>
         <dd>c. 1778</dd>
         <dt>Creators</dt>
-        <dd>Artist, <a href="https://nulib-ds.github.io/art-and-empire/displaying-empire/3-artist-bios.html#samuel-wale" target="_blank">Samuel Wale</a> (1721-1786), British</dd>
+        <dd>
+          Artist,{" "}
+          <a
+            href="https://nulib-ds.github.io/art-and-empire/displaying-empire/3-artist-bios.html#samuel-wale"
+            target="_blank"
+          >
+            Samuel Wale
+          </a>{" "}
+          (1721-1786), British
+        </dd>
         <dd>Engraver, Charles Grignion (1721-1810), British</dd>
         <dt>Medium</dt>
         <dd>Etching and Engraving</dd>
@@ -107,7 +140,8 @@ Deering McCormick Library's Special Collections and University Archives.
         <dd>37 x 24 cm</dd>
         <dt>Attribution</dt>
         <dd>
-          Courtesy of Charles Deering McCormick Library of Special Collections, Northwestern University.
+          Courtesy of Charles Deering McCormick Library of Special Collections,
+          Northwestern University.
         </dd>
         <dt>Call number</dt>
         <dd>Special Collections, L2 Prints W169i</dd>
@@ -118,54 +152,84 @@ Deering McCormick Library's Special Collections and University Archives.
   </GalleryContent>
 </Gallery.Item>
 
-  <Gallery.Item
-    referencedManifests={[
-      "https://api.dc.library.northwestern.edu/api/v2/works/bf59dad4-76f9-4567-b0e2-3c6050663e2d?as=iiif",
-    ]}
-    caption="A Suttee: Preparing for the Immolation of a Hindoo Widow"
-    title="A Suttee: Preparing for the Immolation of a Hindoo Widow"
-    description={
-      <>
-        <p>
-          A bare-breasted woman draped in a white garment prepares for <i>sati</i>–a remote ritual sacrifice in which a widow burns herself upon the death of her husband–amongst a crowd of Hindu worshippers at the ghats of river Vishwamitri against a backdrop of temples and shrines in the city of Baroda (present-day Vadodara). Although both British and Indian communities had pushed for <i>sati</i>’s abolition, colonial lawmakers often cited the ritual's brutal nature as justification for reform of religious and cultural practices in India. The British government officially outlawed <i>sati</i> in 1829. 
-        </p>
-        <p>
-          The print appears on page 7 of <i>Fisher’s Drawing Room Scrap Book</i> (1836), consisting of 36 engravings accompanied by
-          descriptions. Such printed editions were designed for sale to consumers in Britain and Europe, as table-top books that could be perused for entertainment and leisure.
-        </p>
-      </>
-    }
-  >
-    <GalleryContent flex={true}>
-      <ImageStory
-        iiifContent="https://manifest.storiiies-editor.cogapp.com/v3/0583o"
-        height="850"
-      />
-      <aside>
-        <dl>
-          <dt>Date</dt>
-          <dd>1844</dd>
-          <dt>Creators</dt>
-          <dd>Artist, <a href="https://nulib-ds.github.io/art-and-empire/displaying-empire/3-artist-bios.html#captain-robert-melville-grindlay" target="_blank">Captain Robert Melville Grindlay</a> (1786-1877), British</dd>
-          <dd>Engraver, <a href="https://nulib-ds.github.io/art-and-empire/displaying-empire/3-artist-bios.html#james-redaway" target="_blank">James Redaway</a> (1797-1858), British</dd>
-          <dt>Medium</dt>
-          <dd>Engraving</dd>
-          <dt>Image size</dt>
-          <dd>12.1 x 18.8 cm</dd>
-          <dt>Sheet size</dt>
-          <dd>21.1 (20.2) x 27.2 cm</dd>
-          <dt>Attribution</dt>
-          <dd>
-            Courtesy of Charles Deering McCormick Library of Special Collections, Northwestern University.
-          </dd>
-          <dt>Call number</dt>
-          <dd>Special Collections, L1 Prints R3128s</dd>
-          <dt>Curator</dt>
-          <dd>Divya Chandrasekran</dd>
-        </dl>
-      </aside>
-    </GalleryContent>
-  </Gallery.Item>
+<Gallery.Item
+  referencedManifests={[
+    "https://api.dc.library.northwestern.edu/api/v2/works/bf59dad4-76f9-4567-b0e2-3c6050663e2d?as=iiif",
+  ]}
+  caption="A Suttee: Preparing for the Immolation of a Hindoo Widow"
+  title="A Suttee: Preparing for the Immolation of a Hindoo Widow"
+  description={
+    <>
+      <p>
+        A bare-breasted woman draped in a white garment prepares for <i>sati</i>
+        –a remote ritual sacrifice in which a widow burns herself upon the death
+        of her husband–amongst a crowd of Hindu worshippers at the ghats of
+        river Vishwamitri against a backdrop of temples and shrines in the city
+        of Baroda (present-day Vadodara). Although both British and Indian
+        communities had pushed for <i>sati</i>’s abolition, colonial lawmakers
+        often cited the ritual's brutal nature as justification for reform of
+        religious and cultural practices in India. The British government
+        officially outlawed <i>sati</i> in 1829.
+      </p>
+      <p>
+        The print appears on page 7 of <i>Fisher’s Drawing Room Scrap Book</i>{" "}
+        (1836), consisting of 36 engravings accompanied by descriptions. Such
+        printed editions were designed for sale to consumers in Britain and
+        Europe, as table-top books that could be perused for entertainment and
+        leisure.
+      </p>
+    </>
+  }
+>
+  <GalleryContent flex={true}>
+    <ImageStory
+      iiifContent="https://manifest.storiiies-editor.cogapp.com/v3/0583o"
+      height="850"
+    />
+    <aside>
+      <dl>
+        <dt>Date</dt>
+        <dd>1844</dd>
+        <dt>Creators</dt>
+        <dd>
+          Artist,{" "}
+          <a
+            href="https://nulib-ds.github.io/art-and-empire/displaying-empire/3-artist-bios.html#captain-robert-melville-grindlay"
+            target="_blank"
+          >
+            Captain Robert Melville Grindlay
+          </a>{" "}
+          (1786-1877), British
+        </dd>
+        <dd>
+          Engraver,{" "}
+          <a
+            href="https://nulib-ds.github.io/art-and-empire/displaying-empire/3-artist-bios.html#james-redaway"
+            target="_blank"
+          >
+            James Redaway
+          </a>{" "}
+          (1797-1858), British
+        </dd>
+        <dt>Medium</dt>
+        <dd>Engraving</dd>
+        <dt>Image size</dt>
+        <dd>12.1 x 18.8 cm</dd>
+        <dt>Sheet size</dt>
+        <dd>21.1 (20.2) x 27.2 cm</dd>
+        <dt>Attribution</dt>
+        <dd>
+          Courtesy of Charles Deering McCormick Library of Special Collections,
+          Northwestern University.
+        </dd>
+        <dt>Call number</dt>
+        <dd>Special Collections, L1 Prints R3128s</dd>
+        <dt>Curator</dt>
+        <dd>Divya Chandrasekran</dd>
+      </dl>
+    </aside>
+  </GalleryContent>
+</Gallery.Item>
 
 <Gallery.Item
   referencedManifests={[
@@ -273,12 +337,13 @@ Deering McCormick Library's Special Collections and University Archives.
     caption="British India"
     title="British India"
 
-    
-  >
+>
+
     <GalleryContent >
       <Viewer
-  iiifContent="https://api.dc.library.northwestern.edu/api/v2/works/db4ab01b-f25e-4270-a6f4-113c3e9ecc01?as=iiif"
-  options={{
+
+iiifContent="https://api.dc.library.northwestern.edu/api/v2/works/db4ab01b-f25e-4270-a6f4-113c3e9ecc01?as=iiif"
+options={{
     showTitle: true,
     informationPanel: {
       open: true,
@@ -289,6 +354,7 @@ Deering McCormick Library's Special Collections and University Archives.
 />
 
     </GalleryContent>
+
   </Gallery.Item>
   <Gallery.Item
     referencedManifests={[
@@ -488,108 +554,139 @@ Deering McCormick Library's Special Collections and University Archives.
     </GalleryContent>
   </Gallery.Item>
 
-  <Gallery.Item
-    referencedManifests={[
-      "https://api.dc.library.northwestern.edu/api/v2/works/b66de0be-ea16-4c49-8b4d-3c231ad5e2c3?as=iiif",
-    ]}
-    caption="Ceremony of weighing the Great Mogul"
-    title="Ceremony of weighing the Great Mogul"
-    description={
-      <>
-        <p>
-          The Mughal emperor stands on a large scale, surrounded by royal attendants and curious onlookers. This historically inaccurate depiction is a distorted version of a charitable weighing ceremony marking the emperor’s birthday, where equivalent donations of food, clothing, and commodities were distributed to the poor. Derived from a circulating Mughal manuscript folio, the view shows the emperor standing instead of sitting, within a makeshift tent.  
-        </p>
-        <p>
-          The print is part of John Hamilton Moore’s <i>A New and Complete Collection of Voyages and Travels</i> (1785). By refashioning a Mughal weighing ceremony into a circus-like spectacle the print reflects a European taste for exotic scenes of the distant “Orient.”
-        </p>
-      </>
-    }
-  >
-    <GalleryContent flex={true}>
-      <ImageStory
-        iiifContent="https://manifest.storiiies-editor.cogapp.com/v3/6983r"
-        height="850"
-      />
-      <aside>
-        <dl>
-          <dt>Date</dt>
-          <dd>c. 1775-1785</dd>
-          <dt>Creators</dt>
-          <dd>Artist, Louis Fabricius Dubourg (1693-1775), Dutch</dd>
-          <dd>Engraver, James Roberts (1725-1799), British</dd>
-          <dd>Publisher, <a href="https://nulib-ds.github.io/art-and-empire/displaying-empire/3-artist-bios.html#john-hamilton-moore" target="_blank">John Hamilton Moore</a> (1738-1807), Socttish</dd>
-          <dt>Medium</dt>
-          <dd>Engraving</dd>
-          <dt>Image size</dt>
-          <dd>15.8 x 26.7 cm</dd>
-          <dt>Plate size</dt>
-          <dd>19 x 29 cm</dd>
-          <dt>Sheet size</dt>
-          <dd>24 x 37 cm</dd>
-          <dt>Attribution</dt>
-          <dd>
-            Courtesy of Charles Deering McCormick Library of Special Collections, Northwestern University.
-          </dd>
-          <dt>Call number</dt>
-          <dd>Special Collections, L2 Prints R6452c</dd>
-          <dt>Curator</dt>
-          <dd>Vicky Wang</dd>
-        </dl>
-      </aside>
-    </GalleryContent>
-  </Gallery.Item>
- 
-  <Gallery.Item
-    referencedManifests={[
-      "https://api.dc.library.northwestern.edu/api/v2/works/cdb547e9-d5c1-4c1a-9ca5-b3fad0da4915?as=iiif",
-    ]}
-    caption="Miniatures on mica, seated woman sewing"
-    title="Miniatures on mica, seated woman sewing"
-    description={
-      <>
-        <p>
-          An unidentified Indian artist's portrayal of a seated woman, working on the fabric of a  <i>ghagra</i> (folk-style pleated skirt) propped over her raised leg served as a visual identifier of her trade as a seamstress or embroiderer. Painted with vivid, natural pigments and fine shading on a laminated silicate mica sheet, this miniature was typically sold within souvenir sets of Indian subjects.
-        </p>
-        <p>
-          Depicting occupational types rather than individuals, these taxonomic images compress an array of standarized faces and poses into pocket-sized catalogs. Though such pictures catered to European exoticizing sensibilities, their use of colors derived from natural Indian pigments also maintained a sense of ethnic connectedness to India’s laboring populations amid commercialization of their land, resources, and ways of life.
-        </p>
-      </>
-    }
-  >
-    <GalleryContent flex={true}>
-      <ImageStory
-        iiifContent="https://manifest.storiiies-editor.cogapp.com/v3/d583m"
-        height="850"
-      />
-      <aside>
-        <dl>
-          <dt>Date</dt>
-          <dd>c. 1840</dd>
-          <dt>Creator</dt>
-          <dd>Artist now unknown</dd>
-          <dt>Medium</dt>
-          <dd>Watercolor, mica</dd>
-          <dt>Size</dt>
-          <dd>11 x 8 cm</dd>
-          <dt>Attribution</dt>
-          <dd>
-            Courtesy of Charles Deering McCormick Library of Special Collections, Northwestern University.
-          </dd>
-          <dt>Call number</dt>
-          <dd>Special Collections, 751.77095 M665</dd>
-          <dt>Curator</dt>
-          <dd>Louis Chavey</dd>
-        </dl>
-      </aside>
-    </GalleryContent>
-  </Gallery.Item>
- 
-
-
-
-
+<Gallery.Item
+  referencedManifests={[
+    "https://api.dc.library.northwestern.edu/api/v2/works/b66de0be-ea16-4c49-8b4d-3c231ad5e2c3?as=iiif",
+  ]}
+  caption="Ceremony of weighing the Great Mogul"
+  title="Ceremony of weighing the Great Mogul"
+  description={
+    <>
+      <p>
+        The Mughal emperor stands on a large scale, surrounded by royal
+        attendants and curious onlookers. This historically inaccurate depiction
+        is a distorted version of a charitable weighing ceremony marking the
+        emperor’s birthday, where equivalent donations of food, clothing, and
+        commodities were distributed to the poor. Derived from a circulating
+        Mughal manuscript folio, the view shows the emperor standing instead of
+        sitting, within a makeshift tent.
+      </p>
+      <p>
+        The print is part of John Hamilton Moore’s{" "}
+        <i>A New and Complete Collection of Voyages and Travels</i> (1785). By
+        refashioning a Mughal weighing ceremony into a circus-like spectacle the
+        print reflects a European taste for exotic scenes of the distant
+        “Orient.”
+      </p>
+    </>
+  }
+>
+  <GalleryContent flex={true}>
+    <ImageStory
+      iiifContent="https://manifest.storiiies-editor.cogapp.com/v3/6983r"
+      height="850"
+    />
+    <aside>
+      <dl>
+        <dt>Date</dt>
+        <dd>c. 1775-1785</dd>
+        <dt>Creators</dt>
+        <dd>Artist, Louis Fabricius Dubourg (1693-1775), Dutch</dd>
+        <dd>Engraver, James Roberts (1725-1799), British</dd>
+        <dd>
+          Publisher,{" "}
+          <a
+            href="https://nulib-ds.github.io/art-and-empire/displaying-empire/3-artist-bios.html#john-hamilton-moore"
+            target="_blank"
+          >
+            John Hamilton Moore
+          </a>{" "}
+          (1738-1807), Socttish
+        </dd>
+        <dt>Medium</dt>
+        <dd>Engraving</dd>
+        <dt>Image size</dt>
+        <dd>15.8 x 26.7 cm</dd>
+        <dt>Plate size</dt>
+        <dd>19 x 29 cm</dd>
+        <dt>Sheet size</dt>
+        <dd>24 x 37 cm</dd>
+        <dt>Attribution</dt>
+        <dd>
+          Courtesy of Charles Deering McCormick Library of Special Collections,
+          Northwestern University.
+        </dd>
+        <dt>Call number</dt>
+        <dd>Special Collections, L2 Prints R6452c</dd>
+        <dt>Curator</dt>
+        <dd>Vicky Wang</dd>
+      </dl>
+    </aside>
+  </GalleryContent>
+</Gallery.Item>
+<Gallery.Item
+  referencedManifests={[
+    "https://api.dc.library.northwestern.edu/api/v2/works/cdb547e9-d5c1-4c1a-9ca5-b3fad0da4915?as=iiif",
+  ]}
+  caption="Miniatures on mica, seated woman sewing"
+  title="Miniatures on mica, seated woman sewing"
+  description={
+    <>
+      <p>
+        An unidentified Indian artist's portrayal of a seated woman, working on
+        the fabric of a <i>ghagra</i> (folk-style pleated skirt) propped over
+        her raised leg served as a visual identifier of her trade as a
+        seamstress or embroiderer. Painted with vivid, natural pigments and fine
+        shading on a laminated silicate mica sheet, this miniature was typically
+        sold within souvenir sets of Indian subjects.
+      </p>
+      <p>
+        Depicting occupational types rather than individuals, these taxonomic
+        images compress an array of standarized faces and poses into
+        pocket-sized catalogs. Though such pictures catered to European
+        exoticizing sensibilities, their use of colors derived from natural
+        Indian pigments also maintained a sense of ethnic connectedness to
+        India’s laboring populations amid commercialization of their land,
+        resources, and ways of life.
+      </p>
+    </>
+  }
+>
+  <GalleryContent flex={true}>
+    <ImageStory
+      iiifContent="https://manifest.storiiies-editor.cogapp.com/v3/d583m"
+      height="850"
+    />
+    <aside>
+      <dl>
+        <dt>Date</dt>
+        <dd>c. 1840</dd>
+        <dt>Creator</dt>
+        <dd>Artist now unknown</dd>
+        <dt>Medium</dt>
+        <dd>Watercolor, mica</dd>
+        <dt>Size</dt>
+        <dd>11 x 8 cm</dd>
+        <dt>Attribution</dt>
+        <dd>
+          Courtesy of Charles Deering McCormick Library of Special Collections,
+          Northwestern University.
+        </dd>
+        <dt>Call number</dt>
+        <dd>Special Collections, 751.77095 M665</dd>
+        <dt>Curator</dt>
+        <dd>Louis Chavey</dd>
+      </dl>
+    </aside>
+  </GalleryContent>
+</Gallery.Item>
 
 </Gallery>
+
+</ExhibitPanel>
+
+<ExhibitPanel variant="map">
+
 <Map
   height="900px"
   disableTileLayers={true}
@@ -646,3 +743,7 @@ Deering McCormick Library's Special Collections and University Archives.
   />
   <MapPoint lat="9.6" lng="78.17" key="city" title="Madurai" />
 </Map>
+
+</ExhibitPanel>
+</Container>
+</ExhibitExperience>

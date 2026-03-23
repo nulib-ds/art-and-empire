@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "@canopy-iiif/app/ui/styles/index.css";
 @import "./custom.css";
+@import "./exhibit.css";
 
 @layer properties {
   :root,

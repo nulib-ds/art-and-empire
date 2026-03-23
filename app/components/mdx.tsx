@@ -6,6 +6,8 @@
 // Map SSR-safe components to be rendered at build time and used in MDX files
 export const components = {
   Example: "./Example.tsx",
+  ExhibitExperience: "./ExhibitExperience.tsx",
+  ExhibitPanel: "./ExhibitPanel.tsx",
 };
 
 // Map browser-only components to their source files; the builder bundles

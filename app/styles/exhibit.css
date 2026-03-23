@@ -1,0 +1,291 @@
+.exhibit-experience {
+  position: relative;
+  padding: clamp(3rem, 7vw, 6rem) 0 clamp(4rem, 9vw, 7rem);
+  background:
+    linear-gradient(
+      180deg,
+      var(--color-accent-300) 0%,
+      color-mix(
+          in srgb,
+          var(--color-accent-50) 35%,
+          var(--color-accent-100) 65%
+        )
+        45%,
+      color-mix(
+          in srgb,
+          var(--color-accent-100) 20%,
+          var(--color-accent-200) 80%
+        )
+        100%
+    ),
+    radial-gradient(
+      circle at 50% -10%,
+      color-mix(in srgb, var(--color-accent-200) 35%, transparent),
+      color-mix(in srgb, var(--color-accent-50) 0%, transparent) 50%
+    ),
+    linear-gradient(
+      0deg,
+      color-mix(in srgb, var(--color-gray-900) 12%, transparent),
+      transparent 60%
+    );
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.exhibit-experience::before,
+.exhibit-experience::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 140px;
+  top: 0;
+  filter: blur(45px);
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.exhibit-experience::before {
+  left: 5%;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-accent-100) 70%, transparent),
+    color-mix(in srgb, var(--color-accent-100) 0%, transparent)
+  );
+}
+
+.exhibit-experience::after {
+  right: 10%;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-accent-200) 60%, transparent),
+    color-mix(in srgb, var(--color-accent-200) 0%, transparent)
+  );
+}
+
+.exhibit-experience__ambient {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      color-mix(in srgb, var(--color-accent-50) 70%, transparent),
+      color-mix(in srgb, var(--color-accent-50) 0%, transparent) 45%
+    ),
+    radial-gradient(
+      circle at 80% 15%,
+      color-mix(in srgb, var(--color-accent-100) 55%, transparent),
+      color-mix(in srgb, var(--color-accent-100) 0%, transparent) 40%
+    ),
+    radial-gradient(
+      circle at 50% 0%,
+      color-mix(in srgb, var(--color-accent-200) 35%, transparent),
+      color-mix(in srgb, var(--color-accent-200) 0%, transparent) 55%
+    );
+  opacity: 0.7;
+}
+
+.exhibit-experience__shell {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.exhibit-experience__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.72rem;
+  color: color-mix(in srgb, var(--color-gray-900) 66%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-accent-200) 35%, transparent);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  margin-bottom: 1.5rem;
+  background: color-mix(in srgb, var(--color-accent-50) 70%, transparent);
+  backdrop-filter: blur(6px);
+  box-shadow:
+    0 16px 26px color-mix(in srgb, var(--color-gray-600) 22%, transparent),
+    inset 0 1px 0 color-mix(in srgb, var(--color-accent-50) 80%, transparent);
+}
+
+.exhibit-panel {
+  position: relative;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+  border-radius: 1.75rem;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-accent-50) 80%, var(--color-gray-50) 20%),
+    color-mix(in srgb, var(--color-accent-100) 70%, var(--color-accent-200) 30%)
+  );
+  border: 1px solid color-mix(in srgb, var(--color-accent-200) 25%, transparent);
+  color: var(--color-gray-900);
+  box-shadow:
+    0 40px 80px color-mix(in srgb, var(--color-gray-200) 28%, transparent),
+    0 18px 40px color-mix(in srgb, var(--color-accent-300) 40%, transparent),
+    inset 0 1px 0 color-mix(in srgb, var(--color-accent-50) 90%, transparent) !important;
+  margin-left: -4rem;
+
+  &:nth-child(2n) {
+    margin-left: 0;
+    margin-right: -4rem;
+  }
+}
+
+.exhibit-panel__chrome {
+  position: absolute;
+  inset: 0.75rem;
+  border-radius: 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--color-accent-300) 35%, transparent);
+  pointer-events: none;
+  box-shadow:
+    inset 0 0 35px color-mix(in srgb, var(--color-accent-200) 28%, transparent),
+    0 0 28px color-mix(in srgb, var(--color-accent-100) 40%, transparent) !important;
+}
+
+.exhibit-panel__body {
+  position: relative;
+  z-index: 1;
+}
+
+.exhibit-panel--intro .exhibit-panel__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.exhibit-panel--intro h1 {
+  font-size: clamp(3rem, 6vw, 4rem);
+  color: transparent;
+  background-image: linear-gradient(
+    73deg,
+    var(--color-accent-800),
+    var(--color-accent-700),
+    var(--color-accent-900)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  position: relative;
+  width: auto;
+  display: inline-flex;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -5rem;
+    bottom: 0.5rem;
+    height: 0.25rem;
+    width: calc(100% + 1rem);
+    background: color-mix(in srgb, var(--color-accent-200) 80%, transparent);
+    border-radius: 0.5rem;
+    z-index: -1;
+  }
+}
+
+.exhibit-panel--intro p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--color-gray-900) 92%, transparent);
+}
+
+.exhibit-intro__actions {
+  margin-top: 0.5rem;
+}
+
+.exhibit-intro__actions > * {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.exhibit-panel--gallery {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--color-accent-50) 70%, var(--color-accent-100) 30%),
+    color-mix(in srgb, var(--color-accent-100) 75%, var(--color-accent-200) 25%)
+  );
+}
+
+.exhibit-panel--gallery .exhibit-panel__body {
+  padding: 0.5rem clamp(1rem, 4vw, 2.5rem) clamp(2rem, 4vw, 3rem);
+}
+
+.exhibit-panel--gallery .canopy-gallery {
+  padding-top: 1rem;
+  gap: clamp(2rem, 3vw, 3rem);
+}
+
+.exhibit-panel--gallery .canopy-gallery-item__content_flex {
+  padding: 1.5rem 0;
+  border-top: 1px solid
+    color-mix(in srgb, var(--color-accent-200) 35%, transparent);
+  box-shadow: 0 8px 24px
+    color-mix(in srgb, var(--color-gray-500) 25%, transparent);
+}
+
+.exhibit-panel--gallery .canopy-gallery-item__content_flex aside {
+  background: color-mix(
+    in srgb,
+    var(--color-accent-50) 45%,
+    var(--color-gray-50) 55%
+  );
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--color-accent-200) 35%, transparent);
+  box-shadow:
+    0 26px 40px color-mix(in srgb, var(--color-gray-500) 30%, transparent),
+    inset 0 0 18px color-mix(in srgb, var(--color-accent-200) 28%, transparent);
+}
+
+.exhibit-panel--map {
+  background: linear-gradient(
+    155deg,
+    var(--color-accent-50),
+    color-mix(in srgb, var(--color-accent-100) 55%, var(--color-accent-200) 45%)
+  );
+}
+
+.exhibit-panel--map .exhibit-panel__body {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.exhibit-panel--map .exhibit-panel__body > *:first-child {
+  border-radius: 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--color-accent-200) 30%, transparent);
+  box-shadow:
+    inset 0 0 95px color-mix(in srgb, var(--color-accent-50) 95%, transparent),
+    0 35px 60px color-mix(in srgb, var(--color-gray-700) 30%, transparent);
+  overflow: hidden;
+}
+
+@media (min-width: 960px) {
+  .exhibit-panel--intro .exhibit-panel__body {
+    padding: 1rem 1rem 1rem 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .exhibit-panel {
+    border-radius: 1.25rem;
+    padding: 1.75rem;
+  }
+
+  .exhibit-panel__chrome {
+    inset: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .exhibit-panel--gallery .canopy-gallery-item__content_flex {
+    flex-direction: column;
+  }
+
+  .exhibit-panel--gallery .canopy-gallery-item__content_flex aside {
+    width: 100%;
+    min-width: 0;
+  }
+}
