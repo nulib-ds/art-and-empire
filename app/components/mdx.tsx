@@ -8,6 +8,8 @@ export const components = {
   Example: "./Example.tsx",
   ExhibitExperience: "./ExhibitExperience.tsx",
   ExhibitPanel: "./ExhibitPanel.tsx",
+  ExhibitTabs: "./ExhibitTabs.tsx",
+  ExhibitTab: "./ExhibitTabs.tsx",
 };
 
 // Map browser-only components to their source files; the builder bundles
