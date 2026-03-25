@@ -52,42 +52,20 @@
 .exhibit-experience::after {
   content: "";
   position: absolute;
-  inset: -110px -18% -18% -18%;
+  inset: -200px -18% -18% -18%;
   background-image: url("https://iiif.dc.library.northwestern.edu/iiif/3/cbf1c097-97b3-4bf3-9397-20f6b4305c7a/full/2040,/0/default.jpg");
   background-size: 120%;
-  background-position: 0% 0%;
+  background-position: 50% -25px;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   mask-image: linear-gradient(
     180deg,
-    color-mix(in srgb, black 30%, transparent) 0%,
-    color-mix(in srgb, black 10%, transparent) 61.8%,
-    color-mix(in srgb, black 0%, transparent) 2500px
+    color-mix(in srgb, black 50%, transparent) 0%,
+    color-mix(in srgb, black 20%, transparent) 1000px,
+    color-mix(in srgb, black 0%, transparent) 2000px
   );
-  filter: saturate(0.35) contrast(1.15);
   right: 0;
   z-index: 0;
-}
-
-.exhibit-experience__ambient {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(
-      circle at 20% 20%,
-      color-mix(in srgb, var(--color-accent-50) 70%, transparent),
-      color-mix(in srgb, var(--color-accent-50) 0%, transparent) 45%
-    ),
-    radial-gradient(
-      circle at 80% 15%,
-      color-mix(in srgb, var(--color-accent-100) 55%, transparent),
-      color-mix(in srgb, var(--color-accent-100) 0%, transparent) 40%
-    ),
-    radial-gradient(
-      circle at 50% 0%,
-      color-mix(in srgb, var(--color-accent-200) 35%, transparent),
-      color-mix(in srgb, var(--color-accent-200) 0%, transparent) 55%
-    );
-  opacity: 0.7;
 }
 
 .exhibit-experience__shell {
@@ -119,14 +97,10 @@
   position: relative;
   border-radius: 1.75rem;
   padding: clamp(2rem, 5vw, 3.5rem);
-  background: linear-gradient(
-    135deg,
-    color-mix(in srgb, var(--color-accent-50) 80%, var(--color-gray-50) 20%),
-    color-mix(in srgb, var(--color-accent-100) 70%, var(--color-accent-200) 30%)
-  );
+  background: var(--color-gray-50);
   border: 1px solid color-mix(in srgb, var(--color-accent-200) 25%, transparent);
   color: var(--color-gray-900);
-  box-shadow: 10px 10px 50px var(--color-accent-300) !important;
+  box-shadow: 1rem 1rem 3rem #0001 !important;
 }
 
 .exhibit-panel__body {
@@ -134,10 +108,8 @@
   z-index: 1;
 }
 
-.exhibit-panel--intro .exhibit-panel__body {
-  display: flex;
-  flex-direction: column;
-  gap: 1.35rem;
+.exhibit-panel--intro {
+  margin-top: clamp(10rem, 25vw, 30vh);
 }
 
 .exhibit-panel--intro h1 {
@@ -150,7 +122,7 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
-  margin-bottom: 0.5rem;
+  margin-bottom: 3rem;
   font-weight: 400;
   letter-spacing: -0.035em;
   position: relative;
@@ -163,7 +135,7 @@
     left: -63px;
     bottom: 0.5rem;
     height: 2px;
-    width: calc(100% - 10rem);
+    width: calc(100% + 63px);
     background: var(--color-accent-200);
     border-radius: 0.5rem;
     z-index: -1;
@@ -186,114 +158,6 @@
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: flex-start;
-}
-
-.exhibit-panel--gallery {
-  background: linear-gradient(
-    145deg,
-    color-mix(in srgb, var(--color-accent-50) 70%, var(--color-accent-100) 30%),
-    color-mix(in srgb, var(--color-accent-100) 75%, var(--color-accent-200) 25%)
-  );
-}
-
-.exhibit-panel--gallery .exhibit-panel__body {
-  padding: 0.5rem clamp(1rem, 4vw, 2.5rem) clamp(2rem, 4vw, 3rem);
-}
-
-.exhibit-panel--gallery .canopy-gallery {
-  padding-top: 1rem;
-  gap: clamp(2rem, 3vw, 3rem);
-}
-
-.exhibit-panel--gallery .canopy-gallery-item__content_flex {
-  padding: 1.5rem 0;
-  border-top: 1px solid
-    color-mix(in srgb, var(--color-accent-200) 35%, transparent);
-  box-shadow: 0 8px 24px
-    color-mix(in srgb, var(--color-gray-500) 25%, transparent);
-}
-
-.exhibit-panel--gallery .canopy-gallery-item__content_flex aside {
-  background: color-mix(
-    in srgb,
-    var(--color-accent-50) 45%,
-    var(--color-gray-50) 55%
-  );
-  border-radius: 1rem;
-  padding: 1.5rem;
-  border: 1px solid color-mix(in srgb, var(--color-accent-200) 35%, transparent);
-  box-shadow:
-    0 26px 40px color-mix(in srgb, var(--color-gray-500) 30%, transparent),
-    inset 0 0 18px color-mix(in srgb, var(--color-accent-200) 28%, transparent);
-}
-
-.exhibit-panel--map {
-  background: linear-gradient(
-    155deg,
-    var(--color-accent-50),
-    color-mix(in srgb, var(--color-accent-100) 55%, var(--color-accent-200) 45%)
-  );
-}
-
-.exhibit-panel--map .exhibit-panel__body {
-  padding: clamp(1.5rem, 3vw, 2.5rem);
-}
-
-.exhibit-panel--map .exhibit-panel__body > *:first-child {
-  border-radius: 1.5rem;
-  border: 1px solid color-mix(in srgb, var(--color-accent-200) 30%, transparent);
-  box-shadow:
-    inset 0 0 95px color-mix(in srgb, var(--color-accent-50) 95%, transparent),
-    0 35px 60px color-mix(in srgb, var(--color-gray-700) 30%, transparent);
-  overflow: hidden;
-}
-
-.exhibit-bios-panel {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  font-size: 1.05rem;
-  color: color-mix(in srgb, var(--color-gray-900) 90%, transparent);
-}
-
-.exhibit-bios-panel p {
-  margin: 0;
-  line-height: 1.7;
-}
-
-.exhibit-bios-panel h2 {
-  margin: 0;
-  font-size: 1.6rem;
-  color: var(--color-gray-900);
-}
-
-.exhibit-bios-panel h3 {
-  margin: 1.4rem 0 0.4rem;
-  font-weight: 400;
-  color: var(--color-accent-800);
-}
-
-.exhibit-bios-panel h3:first-of-type {
-  margin-top: 1rem;
-}
-
-.exhibit-timeline-panel {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.exhibit-timeline-panel h2 {
-  margin: 0;
-  font-size: 1.6rem;
-}
-
-.exhibit-timeline-panel h3 {
-  margin: 1.5rem 0 0.5rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: color-mix(in srgb, var(--color-gray-800) 90%, transparent);
 }
 
 .exhibit-tabs {
