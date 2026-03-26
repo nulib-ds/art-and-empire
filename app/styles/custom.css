@@ -38,6 +38,16 @@
   margin-top: 1rem;
 }
 
+.canopy-gallery__grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+
+  .canopy-gallery__item {
+    padding: 0;
+    border: none;
+  }
+}
+
 .canopy-gallery-item__content_flex {
   display: flex;
   gap: 2rem;

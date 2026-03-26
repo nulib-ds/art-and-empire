@@ -32,6 +32,10 @@
   isolation: isolate; */
 }
 
+.exhibit-bios-panel h3 {
+  color: var(--color-accent-800);
+}
+
 .exhibit-experience::before {
   content: "";
   position: absolute;
