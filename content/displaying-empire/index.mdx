@@ -25,6 +25,8 @@ Deering McCormick Library's Special Collections and University Archives.
 
 </ExhibitPanel>
 
+<ExhibitTabsHelperClient />
+
 <ExhibitTabs defaultTab="gallery">
   <ExhibitTab id="gallery" label="Gallery">
     <ExhibitPanel variant="gallery">
@@ -705,10 +707,11 @@ viewer into the city.
     <ExhibitPanel variant="map">
 
 <Map
-  height="900px"
+  height="1400px"
   disableTileLayers={true}
   maxClusterRadius={20}
   geoReferences={["https://annotations.allmaps.org/images/26e0416161f6765c"]}
+  defaultZoom={6}
   mapKey={[
     {id: "city", label: "City", type: "small"},
     {id: "landmark", label: "Landmark", type: "small"},

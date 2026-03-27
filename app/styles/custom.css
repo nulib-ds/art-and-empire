@@ -87,3 +87,7 @@
 .storiiies-viewer script {
   display: none !important;
 }
+
+.leaflet-container {
+  background: var(--color-gray-100) !important;
+}

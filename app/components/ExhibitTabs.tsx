@@ -22,15 +22,15 @@ function extractTabs(children: React.ReactNode) {
   });
 }
 
-export function ExhibitTab({ children }: ExhibitTabProps) {
-  return <>{children}</>;
+export function ExhibitTab({children}: ExhibitTabProps) {
+  return <div style={{paddingTop: "4rem"}}>{children}</div>;
 }
 
 type ExhibitTabsProps = React.PropsWithChildren<{
   defaultTab?: string;
 }>;
 
-export default function ExhibitTabs({ defaultTab, children }: ExhibitTabsProps) {
+export default function ExhibitTabs({defaultTab, children}: ExhibitTabsProps) {
   const tabs = extractTabs(children);
   const baseId = React.useId();
   const tabRefs = React.useRef<Array<HTMLAnchorElement | null>>([]);
@@ -47,6 +47,21 @@ export default function ExhibitTabs({ defaultTab, children }: ExhibitTabsProps) 
   const [activeSectionId, setActiveSectionId] = React.useState<string | null>(
     resolvedDefaultSectionId,
   );
+
+  React.useEffect(() => {
+    if (typeof window === "undefined") return;
+    const handler = (event: Event) => {
+      const custom = event as CustomEvent<{sectionId: string; tabsId: string}>;
+      if (!custom?.detail) return;
+      if (custom.detail.tabsId !== baseId) return;
+      setActiveSectionId(custom.detail.sectionId);
+    };
+
+    window.addEventListener("exhibitTabsActive", handler as EventListener);
+    return () => {
+      window.removeEventListener("exhibitTabsActive", handler as EventListener);
+    };
+  }, [baseId]);
 
   React.useEffect(() => {
     setActiveSectionId((current) => {
@@ -77,12 +92,17 @@ export default function ExhibitTabs({ defaultTab, children }: ExhibitTabsProps) 
     const node = tabRefs.current[index];
     if (!node || typeof node.scrollIntoView !== "function") return;
     const scheduler =
-      typeof window !== "undefined" && typeof window.requestAnimationFrame === "function"
+      typeof window !== "undefined" &&
+      typeof window.requestAnimationFrame === "function"
         ? window.requestAnimationFrame
         : (cb: FrameRequestCallback) => setTimeout(cb, 0);
     scheduler(() => {
       try {
-        node.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+        node.scrollIntoView({
+          behavior: "smooth",
+          inline: "center",
+          block: "nearest",
+        });
       } catch (_) {
         node.scrollIntoView();
       }
@@ -124,7 +144,9 @@ export default function ExhibitTabs({ defaultTab, children }: ExhibitTabsProps) 
       });
 
       if (!closestId) return;
-      setActiveSectionId((current) => (current === closestId ? current : closestId));
+      setActiveSectionId((current) =>
+        current === closestId ? current : closestId,
+      );
     };
 
     const scheduleMeasurement = () => {
@@ -133,7 +155,7 @@ export default function ExhibitTabs({ defaultTab, children }: ExhibitTabsProps) 
     };
 
     scheduleMeasurement();
-    window.addEventListener("scroll", scheduleMeasurement, { passive: true });
+    window.addEventListener("scroll", scheduleMeasurement, {passive: true});
     window.addEventListener("resize", scheduleMeasurement);
 
     return () => {
@@ -152,7 +174,7 @@ export default function ExhibitTabs({ defaultTab, children }: ExhibitTabsProps) 
     const node = tabRefs.current[index];
     if (!node || typeof node.focus !== "function") return;
     try {
-      node.focus({ preventScroll: true });
+      node.focus({preventScroll: true});
     } catch (_) {
       node.focus();
     }
@@ -167,7 +189,7 @@ export default function ExhibitTabs({ defaultTab, children }: ExhibitTabsProps) 
     setActiveSectionId(sectionId);
     if (typeof node.scrollIntoView === "function") {
       try {
-        node.scrollIntoView({ behavior: "smooth", block: "start" });
+        node.scrollIntoView({behavior: "smooth", block: "start"});
       } catch (_) {
         node.scrollIntoView();
       }
@@ -180,7 +202,8 @@ export default function ExhibitTabs({ defaultTab, children }: ExhibitTabsProps) 
     const panelId = `${baseId}-panel-${tab.id}`;
     scrollToSection(tab.id, panelId);
     const scheduler =
-      typeof window !== "undefined" && typeof window.requestAnimationFrame === "function"
+      typeof window !== "undefined" &&
+      typeof window.requestAnimationFrame === "function"
         ? window.requestAnimationFrame
         : (cb: FrameRequestCallback) => setTimeout(cb, 0);
     scheduler(() => focusTriggerAtIndex(index));
@@ -213,8 +236,12 @@ export default function ExhibitTabs({ defaultTab, children }: ExhibitTabsProps) 
   };
 
   return (
-    <div className="exhibit-tabs">
-      <nav className="exhibit-tabs__bar" role="navigation" aria-label="Exhibit sections">
+    <div className="exhibit-tabs" data-exhibit-tabs-id={baseId}>
+      <nav
+        className="exhibit-tabs__bar"
+        role="navigation"
+        aria-label="Exhibit sections"
+      >
         {tabs.map((tab, index) => {
           const panelId = `${baseId}-panel-${tab.id}`;
           const isActive = tab.id === activeSectionId;
@@ -229,6 +256,7 @@ export default function ExhibitTabs({ defaultTab, children }: ExhibitTabsProps) 
               className="exhibit-tabs__trigger"
               aria-controls={panelId}
               aria-current={isActive ? "true" : undefined}
+              data-exhibit-tab-label={tab.label}
               onClick={(event) => {
                 event.preventDefault();
                 scrollToSection(tab.id, panelId);
@@ -250,10 +278,18 @@ export default function ExhibitTabs({ defaultTab, children }: ExhibitTabsProps) 
               className="exhibit-tabs__panel"
               id={panelId}
               data-section-id={tab.id}
+              data-exhibit-tab-label={tab.label}
               ref={(node) => {
                 panelRefs.current[tab.id] = node;
               }}
             >
+              <div
+                className="exhibit-tabs__sentinel"
+                data-exhibit-tab-sentinel
+                data-exhibit-tabs-id={baseId}
+                data-section-id={tab.id}
+                data-exhibit-tab-label={tab.label}
+              />
               {tab.content}
             </div>
           );
