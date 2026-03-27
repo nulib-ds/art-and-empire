@@ -709,13 +709,13 @@ viewer into the city.
 <Map
   height="1400px"
   disableTileLayers={true}
-  maxClusterRadius={20}
+  maxClusterRadius={0}
   geoReferences={["https://annotations.allmaps.org/images/26e0416161f6765c"]}
   defaultZoom={6}
   mapKey={[
     {id: "city", label: "City", type: "small"},
     {id: "landmark", label: "Landmark", type: "small"},
-    {id: "work", label: "Work"},
+    {id: "artwork", label: "Artwork"},
   ]}
 >
   <MapPoint lat="34.5553" lng="69.2075" key="city" title="Kabul" />
@@ -762,10 +762,10 @@ viewer into the city.
     title="Tanjore (Brihadeeswarar Temple)"
   />
   <MapPoint lat="9.6" lng="78.17" key="city" title="Madurai" />
-  {/* <MapPoint
+  <MapPoint
     lat="23.65"
     lng="72.83"
-    key="work"
+    key="artwork"
     title="Ahmedabad"
     referencedManifests={[
       "https://api.dc.library.northwestern.edu/api/v2/works/2f317778-20fe-4a61-a123-f2bb3000614c?as=iiif",
@@ -774,7 +774,8 @@ viewer into the city.
   <MapPoint
     lat="25.68"
     lng="85"
-    key="work"
+    key="artwork"
+    title="Patna"
     referencedManifests={[
       "https://api.dc.library.northwestern.edu/api/v2/works/cdb547e9-d5c1-4c1a-9ca5-b3fad0da4915?as=iiif",
     ]}
@@ -782,7 +783,7 @@ viewer into the city.
   <MapPoint
     lat="19.222895884155992"
     lng="72.94247282834391"
-    key="work"
+    key="artwork"
     referencedManifests={[
       "https://api.dc.library.northwestern.edu/api/v2/works/3519b1d0-b57b-466c-84a9-87eda1843252?as=iiif",
     ]}
@@ -790,7 +791,7 @@ viewer into the city.
   <MapPoint
     lat="17.395738738920258"
     lng="78.39715369389299"
-    key="work"
+    key="artwork"
     referencedManifests={[
       "https://api.dc.library.northwestern.edu/api/v2/works/8844c671-14c1-4daf-bd80-6d5379ac1701?as=iiif",
     ]}
@@ -798,7 +799,7 @@ viewer into the city.
   <MapPoint
     lat="26.871391232340724"
     lng="80.91243277474028"
-    key="work"
+    key="artwork"
     referencedManifests={[
       "https://api.dc.library.northwestern.edu/api/v2/works/0b2b8793-d4c7-4a55-8b53-61bfc54bc908?as=iiif",
     ]}
@@ -806,11 +807,11 @@ viewer into the city.
   <MapPoint
     lat="22.304295360634864"
     lng="73.21222117529318"
-    key="work"
+    key="artwork"
     referencedManifests={[
       "https://api.dc.library.northwestern.edu/api/v2/works/bf59dad4-76f9-4567-b0e2-3c6050663e2d?as=iiif",
     ]}
-  /> */}
+  />
 </Map>
 
     </ExhibitPanel>

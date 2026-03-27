@@ -268,3 +268,42 @@
     min-width: 0;
   }
 }
+
+.canopy-map__marker-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-gray-900);
+  padding-right: 4px;
+
+  .canopy-map__marker-label-text {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    font-weight: 400;
+    transition:
+      width 0.3s ease,
+      padding 0.3s ease;
+  }
+
+  &:hover .canopy-map__marker-label-text {
+    width: max-content;
+    padding: 0 4px;
+  }
+}
+
+.canopy-map__marker-thumb,
+.canopy-map__marker-solid {
+  width: 60px;
+  height: 60px;
+  border-width: 1px;
+  box-shadow: 0 4px 12px
+    color-mix(in srgb, var(--color-gray-800) 90%, transparent) !important;
+}
+
+.canopy-map__key-list {
+  justify-content: center;
+}
+
+.canopy-map__key-item {
+  font-size: 1rem;
+}
