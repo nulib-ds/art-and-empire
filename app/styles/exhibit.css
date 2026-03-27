@@ -250,7 +250,8 @@ body[data-canopy-gallery-locked="1"] {
 }
 
 .exhibit-panel--map {
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 960px) {
