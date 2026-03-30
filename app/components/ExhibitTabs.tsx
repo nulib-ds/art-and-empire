@@ -30,9 +30,30 @@ type ExhibitTabsProps = React.PropsWithChildren<{
   defaultTab?: string;
 }>;
 
+const getPanelDomId = (tabId: string) => {
+  const sanitized = tabId
+    .replace(/[^a-zA-Z0-9_-]+/g, "-")
+    .replace(/-{2,}/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return sanitized ? `panel-${sanitized}` : "panel";
+};
+
 export default function ExhibitTabs({defaultTab, children}: ExhibitTabsProps) {
   const tabs = extractTabs(children);
-  const baseId = React.useId();
+  const rawBaseId = React.useId();
+  const baseId = React.useMemo(() => {
+    // Strip non-url-safe characters from the generated id so anchors look clean.
+    const sanitized = rawBaseId
+      .replace(/[^a-zA-Z0-9_-]+/g, "-")
+      .replace(/-{2,}/g, "-")
+      .replace(/^-+|-+$/g, "");
+    if (sanitized) return sanitized;
+
+    const charCodeHash = Array.from(rawBaseId)
+      .map((char) => char.charCodeAt(0).toString(36))
+      .join("");
+    return `exhibit-tabs-${charCodeHash}`;
+  }, [rawBaseId]);
   const tabRefs = React.useRef<Array<HTMLAnchorElement | null>>([]);
   const panelRefs = React.useRef<Record<string, HTMLElement | null>>({});
 
@@ -199,8 +220,8 @@ export default function ExhibitTabs({defaultTab, children}: ExhibitTabsProps) {
   const activateSectionAtIndex = (index: number) => {
     const tab = tabs[index];
     if (!tab) return;
-    const panelId = `${baseId}-panel-${tab.id}`;
-    scrollToSection(tab.id, panelId);
+    const panelDomId = getPanelDomId(tab.id);
+    scrollToSection(tab.id, panelDomId);
     const scheduler =
       typeof window !== "undefined" &&
       typeof window.requestAnimationFrame === "function"
@@ -243,7 +264,7 @@ export default function ExhibitTabs({defaultTab, children}: ExhibitTabsProps) {
         aria-label="Exhibit sections"
       >
         {tabs.map((tab, index) => {
-          const panelId = `${baseId}-panel-${tab.id}`;
+          const panelId = getPanelDomId(tab.id);
           const isActive = tab.id === activeSectionId;
 
           return (
@@ -270,7 +291,7 @@ export default function ExhibitTabs({defaultTab, children}: ExhibitTabsProps) {
       </nav>
       <div className="exhibit-tabs__panels">
         {tabs.map((tab) => {
-          const panelId = `${baseId}-panel-${tab.id}`;
+          const panelId = getPanelDomId(tab.id);
 
           return (
             <div
