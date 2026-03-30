@@ -124,7 +124,7 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   font-weight: 400;
   letter-spacing: -0.035em;
   position: relative;
@@ -142,6 +142,15 @@
     border-radius: 0.5rem;
     z-index: -1;
   }
+}
+
+.exhibit-panel--intro h2 {
+  font-size: clamp(1.22rem, 4vw, 1.5rem);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--color-accent-900);
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .exhibit-panel--intro p {
@@ -281,11 +290,14 @@ body[data-canopy-gallery-locked="1"] {
   }
 }
 
-.canopy-map__marker-label {
+.canopy-map__marker--label {
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--color-gray-900);
-  padding-right: 4px;
+
+  .canopy-map__marker-label {
+    padding-right: 4px;
+  }
 
   .canopy-map__marker-label-text {
     width: 0;
@@ -297,7 +309,8 @@ body[data-canopy-gallery-locked="1"] {
       padding 0.3s ease;
   }
 
-  &:hover .canopy-map__marker-label-text {
+  &:hover .canopy-map__marker-label-text,
+  &:focus .canopy-map__marker-label-text {
     width: max-content;
     padding: 0 4px;
   }
@@ -322,4 +335,9 @@ body[data-canopy-gallery-locked="1"] {
 
 .canopy-timeline__key {
   display: none;
+}
+
+.canopy-gallery__caption {
+  color: var(--color-accent-default);
+  text-decoration: underline;
 }
