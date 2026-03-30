@@ -319,3 +319,7 @@ body[data-canopy-gallery-locked="1"] {
 .canopy-map__key-item {
   font-size: 1rem;
 }
+
+.canopy-timeline__key {
+  display: none;
+}
