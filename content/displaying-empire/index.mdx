@@ -11,24 +11,28 @@ referencedManifests:
 
 # Displaying Empire
 
-The term _Company Painting_ has come to stand in for works produced
-by Indian and British artists associated with the East India Company over
-the course of the consolidation of the British Empire in India from the
-eighteenth to the twentieth centuries. Works in this broad category range
-from depictions of customs and occupations, natural history subjects, and
-topographical paintings embodying the complex visual processes that shaped
-Britain’s reimagination of India as a colony and extension of its empire.
+## East India Company Paintings and the Art of Colonialism
 
-This student-curated exhibit is based on a cache of East India
-Company-associated paintings, prints, and illustrated books in the Charles
-Deering McCormick Library's Special Collections and University Archives.
+This set of facsimilies from the Donald Adams and Lawrence K. Stewart
+Collection of Prints (Charles Deering McCormick Library of Special
+Collections and University Archives) index a long period of British
+occupation in South Asia. In 1600, Queen Elizabeth I established the
+East India Company granting it a charter to conduct trade with the East.
+While it began as a mercantile entity, the Company increasingly became
+a militarized governing presence driven by resource extraction. Britons
+journeyed by sea to port towns along the subcontinent’s coastline, a
+voyage that could take anywhere from three to five months. The Company’s
+stronghold in India attracted professional and amateur British artists,
+some of whom were part of its military and administrative network. Others,
+seeking to further their careers, traveled in India extensively, often relying
+on the support of local experts to record their impressions.
 
 </ExhibitPanel>
 
 <ExhibitTabsHelperClient />
 
 <ExhibitTabs defaultTab="gallery">
-  <ExhibitTab id="gallery" label="Gallery">
+  <ExhibitTab id="gallery" label="Artworks">
     <ExhibitPanel variant="gallery">
 
 <Gallery popupSize="window">
@@ -699,12 +703,34 @@ viewer into the city.
 
 </Gallery>
 
+<div style={{marginTop: "4rem", padding: "0 10%"}}>
+British works on India circulated within markets through private and
+public sales. They were also licensed to other artists and engravers and
+incorporated into prints and publications. The works on display, with the
+exception of the mica painting (far right), were all printed in England, 
+intended for public consumption. They cover a vast array of geographic and
+sociohistorical representations, indicative of a larger British market for
+images of India’s life and landscape.
+
+The subject matter of these prints lies at the intersection of cultural
+exoticism and local practice. Although they share an audience, the contexts
+of the artist-makers vary. Several works were created with the help of local
+Indian artists, commissioned by British authors, who drew on their artistic
+skills and methods to produce representations of diverse cultures and
+places. Other works were created solely by British officers/artists who took
+on journalistic and satirical representations of their travels.
+
+</div>
+
     </ExhibitPanel>
 
   </ExhibitTab>
 
   <ExhibitTab id="map" label="Map of British India">
     <ExhibitPanel variant="map">
+
+## Map of British India
+
 <Map
   height="1400px"
   disableTileLayers={true}
@@ -882,74 +908,102 @@ William Westall (1781–1850) was a British artist known for his landscape drawi
           title=""
           range={{start: "1525", end: "1700", granularity: "year"}}
           scale="uniform"
-          height="1000px"
-        >
-          <TimelinePoint
-            date="1526"
-            title="Mughal Emperor: Babur"
-            summary="through 1530"
-          />
-          <TimelinePoint
-            date="1530"
-            title="Mughal Emperor: Humayun"
-            summary="through 1544"
-          />
-          <TimelinePoint
-            date="1546"
-            title="Mughal Emperor: Humayun"
-            summary="through 1556"
-          />
-          <TimelinePoint
-            date="1556"
-            title="Mughal Emperor: Akbar"
-            summary="through 1605"
-          />
-          <TimelinePoint
-            date="1580"
-            title="Royal Polygot Bible presented to Akbar by the Jesuit Mission"
-            summary="Printed in Antwerp 1568-72."
-          />
-          <TimelinePoint
-            date="1600"
-            title="Dastaan-i Masih"
-            summary="Jerome Xavier, French Jesuit priest and envoy, produces a volume in Persian on the story of Christ ‘Dastaan-i Masih’ illustrated by Akbar’s painters."
-          />
-          <TimelinePoint
-            date="1600"
-            title="Queen Elizabeth grants the English East India Company charter for trade"
-            summary="to break the monopoly of Dutch spice trade in the Indies."
-          />
-          <TimelinePoint
-            date="1605"
-            title="Mughal Emperor: Jahangir"
-            summary="through 1627"
-          />
-          <TimelinePoint
-            date="1616"
-            title="Royal Portraits"
-            summary="British ambassador Thomas Roe presents royal portraits to Jahangir as presents."
-          />
-          <TimelinePoint
-            date="1627"
-            title="Mughal Emperor: Shah Jahan"
-            summary="through 1658"
-          />
-          <TimelinePoint
-            date="1630"
-            title="Taj Mahal"
-            summary="Built by Shah Jahan to commemorate his wife, Mumtaz Mahal"
-          />
-          <TimelinePoint
-            date="1630"
-            title="Peacock Throne"
-            summary="Built for Shah Jahan, gilded and encrusted with semi-precious stones."
-          />
-          <TimelinePoint
-            date="1658"
-            title="Mughal Emperor: Aurangzeb"
-            summary="through 1707"
-          />
-        </Timeline>
+          height="1700px"
+          timelineKey={[
+            {id: "people", label: "Emperors, Officials, Personalities"},
+            {id: "art", label: "Art and Architecture"},
+            {id: "america", label: "American History"},
+          ]}>
+
+<TimelinePoint
+  date="1526"
+  title="Mughal Emperor: Babur"
+  summary="through 1530"
+  side="right"
+/>
+<TimelinePoint
+  date="1530"
+  title="Mughal Emperor: Humayun"
+  summary="through 1544, 1546–1556"
+  side="right"
+/>
+<TimelinePoint
+  date="1556"
+  title="Mughal Emperor: Akbar"
+  summary="through 1605"
+  side="right"
+/>
+<TimelinePoint
+  date="1565"
+  title="First permanent European settlement in North America"
+  summary="St Augustine, present-day Florida, founded by the Spanish"
+  key="america"
+  side="right"
+/>
+<TimelinePoint
+  date="1580"
+  title="Royal Polygot Bible presented to Akbar by the Jesuit Mission"
+  summary="Printed in Antwerp 1568-72."
+  key="art"
+  side="left"
+/>
+<TimelinePoint
+  date="1600"
+  title="Dastaan-i Masih"
+  summary="Jerome Xavier, French Jesuit priest and envoy, produces a volume in Persian on the story of Christ ‘Dastaan-i Masih’ illustrated by Akbar’s painters."
+  key="art"
+  side="left"
+/>
+<TimelinePoint
+  date="1600"
+  title="Queen Elizabeth grants the English East India Company charter for trade"
+  summary="to break the monopoly of Dutch spice trade in the Indies."
+  key="america"
+  side="right"
+/>
+<TimelinePoint
+  date="1605"
+  title="Mughal Emperor: Jahangir"
+  summary="through 1627"
+  side="right"
+/>
+<TimelinePoint
+  date="1616"
+  title="Royal Portraits"
+  summary="British ambassador Thomas Roe presents royal portraits to Jahangir as presents."
+  key="art"
+/>
+<TimelinePoint
+  date="1627"
+  title="Mughal Emperor: Shah Jahan"
+  summary="through 1658"
+  side="right"
+  referencedManifests={[
+    "https://api.dc.library.northwestern.edu/api/v2/works/b66de0be-ea16-4c49-8b4d-3c231ad5e2c3?as=iiif",
+  ]}
+/>
+<TimelinePoint
+  date="1630"
+  title="Taj Mahal"
+  summary="Built by Shah Jahan to commemorate his wife, Mumtaz Mahal"
+  key="art"
+  side="left"
+/>
+<TimelinePoint
+  date="1630"
+  title="Peacock Throne"
+  summary="Built for Shah Jahan, gilded and encrusted with semi-precious stones."
+  key="art"
+  side="left"
+/>
+<TimelinePoint
+  date="1658"
+  title="Mughal Emperor: Aurangzeb"
+  summary="through 1707"
+  side="right"
+/>
+
+</Timeline>
 
         <Timeline
           title=""
@@ -998,11 +1052,6 @@ William Westall (1781–1850) was a British artist known for his landscape drawi
             date="1758"
             title="Robert Clive"
             summary="Governor of Bengal through 1760"
-          />
-          <TimelinePoint
-            date="1764"
-            title="Robert Clive"
-            summary="Governor of Bengal through 1767"
           />
           <TimelinePoint
             date="1759"
