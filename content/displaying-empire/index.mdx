@@ -7,8 +7,6 @@ referencedManifests:
   - https://api.dc.library.northwestern.edu/api/v2/works/213f2874-afca-452d-9bf3-ef0fe85a81ae?as=iiif
 ---
 
-<ExhibitExperience>
-<Container variant="wide">
 <ExhibitPanel variant="intro">
 
 # Displaying Empire
@@ -18,8 +16,6 @@ referencedManifests:
 The East India Company began as a mercantile corporation, chartered by Queen Elizabeth in 1600, to expand mercantile trade in commodities such as spices, cotton, tea, and silk. By the eighteenth century, the Company became a militarized governing presence driven by resource extraction. The Company’s stronghold in India attracted professional and amateur British artists, some of whom were part of its military and administrative network. Others, seeking to further their careers, traveled in India extensively, often relying on the support of local experts to record their impressions.
 
 </ExhibitPanel>
-
-<ExhibitTabsHelperClient />
 
 <ExhibitTabs defaultTab="gallery">
   <ExhibitTab id="gallery" label="Artworks">
@@ -82,14 +78,18 @@ The East India Company began as a mercantile corporation, chartered by Queen Eli
     <>
       <p>
         An Indian woman is powerfully poised over her deceased husband’s burning
-        pyre, with a fist raised. Early European accounts of India recorded the ritual <i>sati</i> as an honorable death for a widow, sparing her from societal disapproval and the loss of certain social liberties.
+        pyre, with a fist raised. Early European accounts of India recorded the
+        ritual <i>sati</i> as an honorable death for a widow, sparing her from
+        societal disapproval and the loss of certain social liberties.
       </p>
       <p>
         Published in Hamilton Moore’s 1785{" "}
         <i>New & Complete Collection of Voyages & Travels,</i> this was one of
         many prints circulated within colonial British society that played upon
         the fear and fascination of unfamiliar and diverse cultural practices
-        and lifestyles. This arcane practice was exoticized as a spectacle for the British gaze and would continue to be portrayed by artists and travelers.
+        and lifestyles. This arcane practice was exoticized as a spectacle for
+        the British gaze and would continue to be portrayed by artists and
+        travelers.
       </p>
     </>
   }
@@ -105,7 +105,14 @@ The East India Company began as a mercantile corporation, chartered by Queen Eli
         <dd>c. 1778</dd>
         <dt>Creators</dt>
         <dd>
-          Artist, <a href="https://nulib-ds.github.io/art-and-empire/displaying-empire/3-artist-bios.html#samuel-wale" target="_blank">Samuel Wale</a> (1721-1786), British
+          Artist,{" "}
+          <a
+            href="https://nulib-ds.github.io/art-and-empire/displaying-empire/3-artist-bios.html#samuel-wale"
+            target="_blank"
+          >
+            Samuel Wale
+          </a>{" "}
+          (1721-1786), British
         </dd>
         <dd>Engraver, Charles Grignion (1721-1810), British</dd>
         <dt>Medium</dt>
@@ -137,13 +144,17 @@ The East India Company began as a mercantile corporation, chartered by Queen Eli
   description={
     <>
       <p>
-        <i>Sati</i> (or <i>suttee</i> as it was anglicized by British colonizers), a remote ritual sacrifice of a widow on the funeral pyre of her husband, became a touchpoint for colonial reform. Here, a bare-breasted woman draped in a white garment prepares for <i>sati</i> amongst a crowd of Hindu worshippers at the ghats of
-        river Vishwamitri against a backdrop of temples and shrines in the city
-        of Baroda (present-day Vadodara). Although both British and Indian
-        communities had pushed for <i>sati</i>’s abolition, colonial lawmakers
-        often cited the ritual's brutal nature as justification for reform of
-        religious and cultural practices in India. The British government
-        officially outlawed <i>sati</i> in 1829.
+        <i>Sati</i> (or <i>suttee</i> as it was anglicized by British
+        colonizers), a remote ritual sacrifice of a widow on the funeral pyre of
+        her husband, became a touchpoint for colonial reform. Here, a
+        bare-breasted woman draped in a white garment prepares for <i>sati</i>{" "}
+        amongst a crowd of Hindu worshippers at the ghats of river Vishwamitri
+        against a backdrop of temples and shrines in the city of Baroda
+        (present-day Vadodara). Although both British and Indian communities had
+        pushed for <i>sati</i>’s abolition, colonial lawmakers often cited the
+        ritual's brutal nature as justification for reform of religious and
+        cultural practices in India. The British government officially outlawed{" "}
+        <i>sati</i> in 1829.
       </p>
       <p>
         The print appears on page 7 of <i>Fisher’s Drawing Room Scrap Book</i>{" "}
@@ -873,520 +884,6 @@ William Westall (1781–1850) was a British artist known for his landscape drawi
 
   </ExhibitTab>
 
-  <ExhibitTab id="timeline" label="Timeline">
-    <ExhibitPanel>
-      <div className="exhibit-timeline-panel">
-
-        <Timeline
-          title=""
-          range={{start: "1525", end: "1700", granularity: "year"}}
-          scale="uniform"
-          height="1700px"
-          timelineKey={[
-            {id: "art", label: "Art and Architecture"},
-            {id: "people", label: "Emperors, Officials, Personalities"},
-            {id: "events", label: "Events and Developments"},
-          ]}>
-
-<TimelinePoint
-  date="1526"
-  title="Mughal Emperor: Babur"
-  summary="through 1530"
-  key="people"
-  side="right"
-/>
-<TimelinePoint
-  date="1530"
-  title="Mughal Emperor: Humayun"
-  summary="through 1544, 1546–1556"
-  key="people"
-  side="right"
-/>
-<TimelinePoint
-  date="1556"
-  title="Mughal Emperor: Akbar"
-  summary="through 1605"
-  key="people"
-  side="right"
-/>
-<TimelinePoint
-  date="1565"
-  title="First permanent European settlement in North America"
-  summary="St Augustine, present-day Florida, founded by the Spanish"
-  key="events"
-  side="right"
-/>
-<TimelinePoint
-  date="1580"
-  title="Royal Polygot Bible presented to Akbar by the Jesuit Mission"
-  summary="Printed in Antwerp 1568-72."
-  key="art"
-  side="left"
-/>
-<TimelinePoint
-  date="1600"
-  title="Dastaan-i Masih"
-  summary="Jerome Xavier, French Jesuit priest and envoy, produces a volume in Persian on the story of Christ ‘Dastaan-i Masih’ illustrated by Akbar’s painters."
-  key="art"
-  side="left"
-/>
-<TimelinePoint
-  date="1600"
-  title="Queen Elizabeth grants the English East India Company charter for trade"
-  summary="to break the monopoly of Dutch spice trade in the Indies."
-  key="events"
-  side="right"
-/>
-<TimelinePoint
-  date="1605"
-  title="Mughal Emperor: Jahangir"
-  summary="through 1627"
-  key="people"
-  side="right"
-/>
-<TimelinePoint
-  date="1616"
-  title="Royal Portraits"
-  summary="British ambassador Thomas Roe presents royal portraits to Jahangir as presents."
-  key="art"
-/>
-<TimelinePoint
-  date="1627"
-  title="Mughal Emperor: Shah Jahan"
-  summary="through 1658"
-  key="people"
-  side="right"
-  referencedManifests={[
-    "https://api.dc.library.northwestern.edu/api/v2/works/b66de0be-ea16-4c49-8b4d-3c231ad5e2c3?as=iiif",
-  ]}
-/>
-<TimelinePoint
-  date="1630"
-  title="Taj Mahal"
-  summary="Built by Shah Jahan to commemorate his wife, Mumtaz Mahal"
-  key="art"
-  side="left"
-/>
-<TimelinePoint
-  date="1630"
-  title="Peacock Throne"
-  summary="Built for Shah Jahan, gilded and encrusted with semi-precious stones."
-  key="art"
-  side="left"
-/>
-<TimelinePoint
-  date="1658"
-  title="Mughal Emperor: Aurangzeb"
-  summary="through 1707"
-  key="people"
-  side="right"
-/>
-
-</Timeline>
-
-        <Timeline
-          title=""
-          range={{start: "1725", end: "1771", granularity: "year"}}
-          scale="uniform"
-          height="1700px"
-          timelineKey={[
-            {id: "art", label: "Art and Architecture"},
-            {id: "people", label: "Emperors, Officials, Personalities"},
-            {id: "events", label: "Events and Developments"},
-          ]}>
-          <TimelinePoint
-            date="1729"
-            title="Mughal Emperor: Muhammad Shah"
-            summary="through 1748"
-            key="people"
-            side="right"
-          />
-          <TimelinePoint
-            date="1739"
-            title="Sack of Delhi"
-            summary="by Iranian General Nadir Shah. The Peacock Throne dismantled in Iran."
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1754"
-            title="Safdar Jang dies"
-            summary="His line is continued by later Nawabs (Governors) of Awadh (Oudh). Nawab Shuja ud-Daula Governor of the province Awadh through 1775."
-            key="people"
-            side="right"
-          />
-          <TimelinePoint
-            date="1754"
-            title="Safdar Jang's Tomb built in Delhi"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint
-            date="1756"
-            title="Seven Years War between Great Britain and France"
-            summary="Ends in 1763."
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1757"
-            title="Battle of Plassey"
-            summary="fought between the East India Company (Robert Clive) and the Nawab of Bengal and his allies."
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1758"
-            title="Carl Linnaeus, Swedish botanist, devises rules for binomial nomenclature"
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1758"
-            dataLabel="Robert Clive appointed Governor of Bengal"
-            title="Robert Clive"
-            summary="Governor of Bengal (1758-60 and 1764-67)"
-            key="people"
-            side="right"
-          />
-          <TimelinePoint
-            date="1759"
-            title="Mughal Emperor: Shah Alam II"
-            summary="through 1806"
-            key="people"
-            side="right"
-          />
-          <TimelinePoint
-            date="1759"
-            title="Awadh Painter Mihr Chand"
-            summary="Active in India until 1780s"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint
-            date="1763"
-            title="End of Seven Years' War between Great Britain and France"
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1764"
-            title="Battle of Buxar"
-            summary="Hector Munro wins over combined forces of Shah Alam II and allies"
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1765"
-            title="Grant of the Diwani"
-            summary="Robert Clive secures right to collect Diwani (land taxes and customs) on behalf of Shah Alam II"
-            key="events"
-            side="right"
-            highlight
-          />
-          <TimelinePoint
-            date="1770"
-            title="Great Bengal Famine"
-            key="events"
-            side="right"
-          />
-        </Timeline>
-
-        <Timeline
-          title=""
-          range={{start: "1771", end: "1806", granularity: "year"}}
-          scale="uniform"
-          height="2800px"
-          timelineKey={[
-            {id: "art", label: "Art and Architecture"},
-            {id: "people", label: "Emperors, Officials, Personalities"},
-            {id: "events", label: "Events and Developments"},
-          ]}>
-          <TimelinePoint
-            date="1771"
-            title="Shah Alam II enters Delhi and re-stakes claim to the Mughal capital."
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1771"
-            title="Antoine Polier in Awadh, working for Shuja ud-Daula, commissions paintings by artists"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint
-            date="1774"
-            title="Jean Baptiste Gentil, French Resident, commissions albums by Indian artists in Awadh"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint
-            date="1775"
-            title="Nawab Asaf ud-Daula, Governor of the province of Awadh"
-            summary="through 1797"
-            key="people"
-            side="right"
-          />
-          <TimelinePoint
-            date="1772"
-            title="Warren Hastings, Governor General of Bengal"
-            summary="in office 1772-1785; impeached in 1787"
-            key="people"
-            side="right"
-          />
-          <TimelinePoint
-            date="1773"
-            title="Elijah Impey (Chief Justice of EIC in Bengal) and Mary Impey in Calcutta"
-            key="people"
-            side="right"
-          />
-          <TimelinePoint
-            date="1776-07-04"
-            title="Declaration of Independence endorsed by Congress"
-            summary="Colonies declare independence."
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1777"
-            title="Painter Zayn al-Din, Ram Das and others paint birds and animals in the Impey menagerie. Bhawani Das active since 1773"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint
-            date="1782"
-            title="James Renell’s map of India using the Trigonometric Survey"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint
-            date="1778"
-            title="Painter William Hodges’ tenure in India"
-            summary="through 1783"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint
-            date="1783"
-            title="Painter John Zoffany in India, working for various European patrons"
-            summary="through 1789"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint
-            date="1786"
-            title="Painters Thomas Daniell and William Daniell (uncle and nephew pair) in India"
-            summary="through 1793"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint date="1789" title="French Revolution" key="events" side="right" />
-          <TimelinePoint
-            date="1789"
-            title="George Washington elected first president of USA"
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1793"
-            title="Permanent Settlement of Bengal"
-            summary="fixing rent for landowners/zamindars to collect on behalf of British officials."
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1803"
-            title="France sells Louisiana territories to USA"
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1789"
-            title="Evidence of painterly activity at Delhi by Painter Ghulam Ali Khan and his workshop"
-            summary="from this year and onwards"
-            key="art"
-            side="left"
-
-          />
-          <TimelinePoint
-            date="1803"
-            title="East India Company takes over the affairs of Delhi under Shah Alam II, establishment of the office of the British Resident in Delhi"
-            key="people"
-            side="right"
-          />
-          <TimelinePoint
-            date="1806"
-            title="Death of the Mughal Emperor Shah Alam II"
-            key="people"
-            side="right"
-          />
-        </Timeline>
-
-        <Timeline
-          title=""
-          range={{start: "1806", end: "1857", granularity: "year"}}
-          scale="uniform"
-          height="1500px"
-          timelineKey={[
-            {id: "art", label: "Art and Architecture"},
-            {id: "people", label: "Emperors, Officials, Personalities"},
-            {id: "events", label: "Events and Developments"},
-          ]}>
-          <TimelinePoint
-            date="1806"
-            title="Mughal Emperor: Akbar II"
-            summary="through 1837"
-            key="people"
-            side="right"
-          />
-          <TimelinePoint
-            date="1806"
-            title="William Fraser, EIC Administrator and later British Resident of Delhi"
-            summary="through 1835"
-            key="people"
-            side="right"
-          />
-          <TimelinePoint
-            date="1808"
-            title="Atlantic slave trade abolished"
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1812"
-            title="War of 1812 between US and Britain"
-            summary="partly over the effects of British restrictions on US trade during the Napoleonic Wars. Through 1815."
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1815"
-            title="Indian artists work on the Fraser Album"
-            summary="through 1820"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint
-            date="1827"
-            title="Ghulam Ali Khan creates a trio of large paintings for James Skinner"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint
-            date="1825"
-            title="US Events in the 19th Century"
-            summary="Residual resistance by indigenous people crushed as immigration from Europe assumes mass proportions, with settlers moving westwards and claiming 'manifest destiny' to control North America; number of states in the union rises from 17 to 45"
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1837"
-            title="Bahadur Shah Zafar, last Mughal king of Delhi"
-            summary="through 1857"
-            key="people"
-            side="right"
-          />
-          <TimelinePoint
-            date="1837"
-            title="Coronation portrait of Zafar by Ghulam Ali Khan"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint
-            date="1840"
-            title="Photography widely used as a medium by local and European photographers"
-            summary="throughout 1840s"
-            key="art"
-            side="left"
-          />
-          <TimelinePoint
-            date="1854"
-            title="US: Opponents of slavery, or abolitionists, set up Republican Party."
-            key="events"
-            side="right"
-          />
-          <TimelinePoint
-            date="1857"
-            title="Uprising of 1857, followed by British siege of Delhi."
-            summary="Company rule replaced by Crown rule in India, Zafar exiled to Burma, his sons killed."
-            key="events"
-            side="right"
-          />
-        </Timeline>
-
-        <Timeline
-          title=""
-          range={{start: "1857", end: "1947", granularity: "year"}}
-          scale="uniform"
-          height="1000px"
-          timelineKey={[
-            {id: "art", label: "Art and Architecture"},
-            {id: "people", label: "Emperors, Officials, Personalities"},
-            {id: "events", label: "Events and Developments"},
-          ]}>
-          <TimelinePoint
-            date="1860"
-            title="Death of Zafar in Captivity"
-            key="people"
-            side="right"
-          />
-          <TimelinePoint
-            date="1860"
-            title="US: Republican candidate Abraham Lincoln elected president."
-            side="right"
-            key="events"
-          />
-          <TimelinePoint
-            date="1865"
-            title="US: Confederates defeated"
-            summary="slavery abolished under Thirteenth Amendment. Lincoln is assassinated"
-            side="right"
-            key="events"
-          />
-          <TimelinePoint
-            date="1877"
-            title="Grand Assemblages modelled on the Mughal court organised to celebrate British imperial coronations"
-            summary="also in 1903 and 1911"
-            side="left"
-            key="art"
-          />
-          <TimelinePoint
-            date="1885"
-            title="Formation of the Indian National Congress, nationalist movement and later political party"
-            side="right"
-            key="events"
-          />
-          <TimelinePoint
-            date="1906"
-            title="Formation of the All-India Muslim League in Dhaka (present day Bangladesh)"
-            side="right"
-            key="events"
-          />
-          <TimelinePoint
-            date="1911"
-            title="King George announces the making of a new capital, New Delhi"
-            side="left"
-            key="art"
-          />
-          <TimelinePoint
-            date="1930"
-            title="Edwin Lutyens designs New Delhi capitol complex."
-            summary="1930s"
-            side="left"
-            key="art"
-          />
-          <TimelinePoint
-            date="1947"
-            title="Independence from British rule. Partition of India and Pakistan"
-            side="right"
-            key="events"
-          />
-        </Timeline>
-      </div>
-    </ExhibitPanel>
-
-  </ExhibitTab>
-
   <ExhibitTab id="about" label="About">
     <ExhibitPanel variant="about">
 
@@ -1409,8 +906,8 @@ exhibit at the Library, this course offered students the opportunity to write
 wall texts and labels, design object placement, and contribute to a digital
 companion site featuring their research on the works.
 
-    Yuthika Sharma  
-    Assistant Professor, Department of Art History  
+    Yuthika Sharma
+    Assistant Professor, Department of Art History
     *The physical exhibit will be on display in Northwestern's Main Library April 2 - June 13, 2026*
 
 </div>
@@ -1419,5 +916,3 @@ companion site featuring their research on the works.
 
   </ExhibitTab>
 </ExhibitTabs>
-</Container>
-</ExhibitExperience>
