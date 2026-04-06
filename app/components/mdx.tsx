@@ -18,4 +18,5 @@ export const clientComponents = {
   ExampleClient: "./Example.client.tsx",
   StoryMapJS: "./StoryMapJS.client.tsx",
   ExhibitTabsHelperClient: "./ExhibitTabsHelper.client.tsx",
+  DisplayingEmpireSlider: "./DisplayingEmpireSlider.client.tsx",
 };

@@ -2,6 +2,7 @@
 @import "@canopy-iiif/app/ui/styles/index.css";
 @import "./custom.css";
 @import "./exhibit.css";
+@import "./_displaying-empire-slider.css";
 
 @layer properties {
   :root,
