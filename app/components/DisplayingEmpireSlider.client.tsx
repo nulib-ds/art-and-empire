@@ -19,9 +19,11 @@ const INSTALL_IMAGE_PATHS = Array.from(
   (_, idx) => `/displaying-empire/install-${idx + 1}.jpeg`,
 );
 
-const defaultSlides: DisplayingEmpireSlide[] = INSTALL_IMAGE_PATHS.map((src) => ({
-  src,
-}));
+const defaultSlides: DisplayingEmpireSlide[] = INSTALL_IMAGE_PATHS.map(
+  (src) => ({
+    src,
+  }),
+);
 
 const DisplayingEmpireSlider: FC<DisplayingEmpireSliderProps> = ({
   slides,
@@ -32,18 +34,16 @@ const DisplayingEmpireSlider: FC<DisplayingEmpireSliderProps> = ({
     [slides],
   );
   const resolvedSlides = useMemo(
-    () => mergedSlides.map((slide) => ({
-      ...slide,
-      src: withBasePath(slide.src),
-    })),
+    () =>
+      mergedSlides.map((slide) => ({
+        ...slide,
+        src: withBasePath(slide.src),
+      })),
     [mergedSlides],
   );
 
   return (
     <section className="displaying-empire-slider">
-      {heading ? (
-        <h3 className="displaying-empire-slider__heading">{heading}</h3>
-      ) : null}
       <Swiper
         modules={[Navigation, Pagination, A11y]}
         slidesPerView={1.05}
@@ -69,6 +69,9 @@ const DisplayingEmpireSlider: FC<DisplayingEmpireSliderProps> = ({
           </SwiperSlide>
         ))}
       </Swiper>
+      {heading ? (
+        <h3 className="displaying-empire-slider__heading">{heading}</h3>
+      ) : null}
     </section>
   );
 };
