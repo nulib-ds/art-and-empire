@@ -1,0 +1,125 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p",
+  "type": "Manifest",
+  "label": {
+    "en": ["The Great Triad in the Cave Temple of Elephanta near Bombay"]
+  },
+  "items": [
+    {
+      "id": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/canvases/1",
+      "type": "Canvas",
+      "height": 1490,
+      "width": 1952,
+      "items": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/pages/image/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/annotations/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://storiiies-images.cogapp.com/iiif/2/1773018710675Elephanta.ptif/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1490,
+                "width": 1952,
+                "service": [
+                  {
+                    "id": "https://storiiies-images.cogapp.com/iiif/2/1773018710675Elephanta.ptif",
+                    "profile": "level2",
+                    "type": "ImageService2"
+                  }
+                ]
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/canvases/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/pages/text/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/pages/text/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "A torch-bearing figure illuminates sculptural guardians and the central, three-faced deity Shiva (Sadashiva).",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/canvases/1#xywh=175,535,1045,725"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/pages/text/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Shiva's three aspects: fierce, pensive, and gentle.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/canvases/1#xywh=480,396,1045,725"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/pages/text/1/annotation/2",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Three turbaned men in white garments stand in brightly colored shawls. ",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/canvases/1#xywh=626,544,1045,725"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/pages/text/1/annotation/3",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "The image evokes the intimacy of a sacred interior while maintaining the detachment of an observing foreigner’s gaze.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/canvases/1#xywh=-198,-55,2386,1656"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/pages/text/1/annotation/4",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Though drawn onsite by Westall in 1803, it was engraved by T. Edge and published by Grindlay in London between 1826–1830.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/ff84p/canvases/1#xywh=442,753,1045,725"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": ["<p>Hand-colored aquatint engraving on paper</p>"]
+  },
+  "requiredStatement": {
+    "label": {
+      "en": ["Attribution"]
+    },
+    "value": {
+      "en": [
+        "Library copy from the library of Donald K. Adams and Lawrence D. Stewart"
+      ]
+    }
+  }
+}

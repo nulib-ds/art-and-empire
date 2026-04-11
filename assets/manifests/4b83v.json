@@ -1,0 +1,117 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "The Shaking Minarets at Ahmedabad : drawn on the spot in 1809, by Captn. Grindlay"
+    ]
+  },
+  "items": [
+    {
+      "id": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/canvases/1",
+      "type": "Canvas",
+      "height": 2292,
+      "width": 3000,
+      "items": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/pages/image/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/annotations/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://storiiies-images.cogapp.com/iiif/2/1771002002747recto.ptif/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 2292,
+                "width": 3000,
+                "service": [
+                  {
+                    "id": "https://storiiies-images.cogapp.com/iiif/2/1771002002747recto.ptif",
+                    "profile": "level2",
+                    "type": "ImageService2"
+                  }
+                ]
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/canvases/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/pages/text/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/pages/text/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "One of the \"Shaking Minarets\", when prayer was called from the top of the Minaret, the motion of that tower shaking led to the other tower to shake.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/canvases/1#xywh=1198,284,1045,665"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/pages/text/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "The central entryway to the mosque, with shading applied to the rows of pillars beyond the arched entryway, achievable through the aquatint process",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/canvases/1#xywh=1018,1078,1045,665"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/pages/text/1/annotation/2",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Residents of Ahmedabad, showing the mosque as not just in use, but part of the city's landscape.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/canvases/1#xywh=576,1359,1045,665"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/pages/text/1/annotation/3",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "An example of a religious signifier in the image, rays of sunlight shining through the sky, illuminating a holy building. ",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/4b83v/canvases/1#xywh=1718,511,1045,665"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": [
+      "<p>The print is the earliest known published image of Sidi Bashir Mosque in Northwestern India. Centered on the twin prayer towers of the mosque, notable for how they shake in tandem when the motion of ascending the tower before calling for prayer shakes the minaret.<br>British artist and Captain, Robert Grindlay painted the mosque while traveling India with the Bombay army. The print, first appearing in Scenery, costumes and architecture, chiefly on the western side of India, shows the mosque in a documentary fashion, with even the details on the walls of the mosque being preserved for future viewers.</p>"
+    ]
+  },
+  "requiredStatement": {
+    "label": {
+      "en": ["Attribution"]
+    },
+    "value": {
+      "en": [
+        "Library copy from the library of Donald K. Adams and Lawrence D. Stewart"
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://manifest.storiiies-editor.cogapp.com/v3/0c83z",
+  "type": "Manifest",
+  "label": {
+    "en": ["Dancing Snake and Musicians"]
+  },
+  "items": [
+    {
+      "id": "https://manifest.storiiies-editor.cogapp.com/v3/0c83z/canvases/1",
+      "type": "Canvas",
+      "height": 7491,
+      "width": 6068,
+      "items": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/0c83z/pages/image/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/0c83z/annotations/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.dc.library.northwestern.edu/iiif/3/836e3a20-5c0e-48c7-b8b1-c779c9d2ec2d/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 7491,
+                "width": 6068,
+                "service": [
+                  {
+                    "id": "https://iiif.dc.library.northwestern.edu/iiif/3/836e3a20-5c0e-48c7-b8b1-c779c9d2ec2d",
+                    "profile": "level2",
+                    "type": "ImageService2"
+                  }
+                ]
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/0c83z/canvases/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/0c83z/pages/text/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/0c83z/pages/text/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "The serpent belongs to the genus of the Indian nagao, a type of cobra characterized by a hood.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/0c83z/canvases/1#xywh=891,3887,3073,1873"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": ["<p>Dancing Snake and Musicians</p>"]
+  },
+  "requiredStatement": {
+    "label": {
+      "en": ["Attribution"]
+    },
+    "value": {
+      "en": [
+        "Donations from the library of Donald K. Adams and Lawrence D. Stewart."
+      ]
+    }
+  }
+}

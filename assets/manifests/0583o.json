@@ -1,0 +1,77 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://manifest.storiiies-editor.cogapp.com/v3/0583o",
+  "type": "Manifest",
+  "label": {
+    "en": ["A Suttee. Preparing for the Immolation of a Hindoo Widow."]
+  },
+  "items": [
+    {
+      "id": "https://manifest.storiiies-editor.cogapp.com/v3/0583o/canvases/1",
+      "type": "Canvas",
+      "height": 5299,
+      "width": 6806,
+      "items": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/0583o/pages/image/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/0583o/annotations/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.dc.library.northwestern.edu/iiif/3/ee8ec8ec-1620-43fe-98ae-63d1da0ea7e7/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 5299,
+                "width": 6806,
+                "service": [
+                  {
+                    "id": "https://iiif.dc.library.northwestern.edu/iiif/3/ee8ec8ec-1620-43fe-98ae-63d1da0ea7e7",
+                    "profile": "level2",
+                    "type": "ImageService2"
+                  }
+                ]
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/0583o/canvases/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/0583o/pages/text/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/0583o/pages/text/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "A woman draped in a white garment prepares for sati",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/0583o/canvases/1#xywh=1816,3053,957,668"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": [
+      "<p>A window prepares for sati amongst a crowd of Hindu worshippers and British military officers. Sati is a sacrifice in which a widow burns herself alive on her husband’s funeral pyre.</p>"
+    ]
+  },
+  "requiredStatement": {
+    "label": {
+      "en": ["Attribution"]
+    },
+    "value": {
+      "en": ["Gift of Donald K. Adams and Lawrence D. Stewart"]
+    }
+  }
+}

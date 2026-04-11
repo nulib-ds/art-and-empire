@@ -1,0 +1,93 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://manifest.storiiies-editor.cogapp.com/v3/4084o",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "No. 25 View of Stone Bridge From Moosah Bagh End of the City. No. 26 View of the Great Iman Barra and the Roome Durwaza. No. 27 Moosah Bagh."
+    ]
+  },
+  "items": [
+    {
+      "id": "https://manifest.storiiies-editor.cogapp.com/v3/4084o/canvases/1",
+      "type": "Canvas",
+      "height": 13366,
+      "width": 8995,
+      "items": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/4084o/pages/image/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/4084o/annotations/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.dc.library.northwestern.edu/iiif/3/3e5227b1-0c34-4209-9634-cd445ed9ffd7/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 13366,
+                "width": 8995,
+                "service": [
+                  {
+                    "id": "https://iiif.dc.library.northwestern.edu/iiif/3/3e5227b1-0c34-4209-9634-cd445ed9ffd7",
+                    "profile": "level2",
+                    "type": "ImageService2"
+                  }
+                ]
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/4084o/canvases/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/4084o/pages/text/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/4084o/pages/text/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Roome Durwaza, also known as Rumi Gate, was built in 1784 by Nawab Asaf-ud Daula. ",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/4084o/canvases/1#xywh=3031,5985,2375,1671"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/4084o/pages/text/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "The minarets and domed peaks of the Asfi Mosque, can be seen within the Bara Imambara complex.  ",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/4084o/canvases/1#xywh=4727,5295,2850,2005"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/4084o/pages/text/1/annotation/2",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "These structures all display elements characteristic of Nawabi architecture: stories of rowed arches, Shia Imambara complexes, and intricate design work in stucco.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/4084o/canvases/1#xywh=1508,5699,2850,2005"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": [""]
+  }
+}

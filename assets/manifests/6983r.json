@@ -1,0 +1,129 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://manifest.storiiies-editor.cogapp.com/v3/6983r",
+  "type": "Manifest",
+  "label": {
+    "en": ["Ceremony of Weighing the Great Mogul"]
+  },
+  "items": [
+    {
+      "id": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/canvases/1",
+      "type": "Canvas",
+      "height": 5988,
+      "width": 9024,
+      "items": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/pages/image/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/annotations/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.dc.library.northwestern.edu/iiif/3/9eed65b4-1e1a-4378-ad43-94cd89dbc0df/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 5988,
+                "width": 9024,
+                "service": [
+                  {
+                    "id": "https://iiif.dc.library.northwestern.edu/iiif/3/9eed65b4-1e1a-4378-ad43-94cd89dbc0df",
+                    "profile": "level2",
+                    "type": "ImageService2"
+                  }
+                ]
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/canvases/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/pages/text/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/pages/text/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "At the center of the scene, the Mughal emperor stands upright on one pan of a monumental scale. This is an inaccurate depiction – in paintings by Mughal court painters, the emperor is always illustrated as seated.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/canvases/1#xywh=4027,2203,2256,1673"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/pages/text/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "A large crowd gathers around the scale—a few figures kneel before the emperor in supplication, while guards and courtiers scatter about, some conversing, some celebrating, and others merely witnessing the scene. Other works depicting the weighing ceremony demonstrate control and order in their compositions; never was the Mughal emperor so accessible, nor the court so chaotic.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/canvases/1#xywh=3185,1599,4042,2997"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/pages/text/1/annotation/2",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "The weighing ceremony is depicted as taking place in a temporary tent-like space formed by draped curtains. Ornaments are minimal, consisting of a bare tiled floor and plain fabric backdrops.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/canvases/1#xywh=1881,744,5802,4303"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/pages/text/1/annotation/3",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "The weighing scales are unadorned, and the emperor is weighed against metal weights rather than valuable goods.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/canvases/1#xywh=3130,1356,3358,2490"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/pages/text/1/annotation/4",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "The contrast becomes even more apparent when the engraving is compared with the written account that accompanies it, which describes that “the palace is adorned with flambeaux, and so are the avenues leading to it,” a spectacle not reflected in the print.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/canvases/1#xywh=1067,149,7219,5353"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/pages/text/1/annotation/5",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Ceremony of Weighing the Great Mogul reveals more about European perceptions of India than about Mughal court customs. The image’s theatrical composition, simplified setting, and inaccurate details shaped how contemporary readers understood—or misunderstood—the historical ceremony. It does not represent foreign cultures, but transforms the ritual into an exotic spectacle that reinforces a distorted, European vision of India.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/6983r/canvases/1#xywh=479,-85,8356,6196"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": [
+      "<p>This print depicts the weighing ceremony, a significant ritual of the Mughal court. Traditionally performed on the emperor’s solar and lunar birthdays, the ceremony involved weighing the emperor against valuable substances, such as gold, spices, and food, with the equivalent weight in goods then distributed to the public as charity.</p>"
+    ]
+  }
+}

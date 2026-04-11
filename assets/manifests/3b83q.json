@@ -1,0 +1,129 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Indian spices for English tables, or, A rare relish of fun from the Far East : Being, the adventures of \"our special correspondent\" in India, illustrated in a series of one hundred and twenty sketches, and exhibiting, in all its phases, the peculiarity of life in that country"
+    ]
+  },
+  "items": [
+    {
+      "id": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/canvases/1",
+      "type": "Canvas",
+      "height": 6873,
+      "width": 9127,
+      "items": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/pages/image/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/annotations/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.dc.library.northwestern.edu/iiif/3/5a1ee74b-6337-4bad-895f-603013e70988/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 6873,
+                "width": 9127,
+                "service": [
+                  {
+                    "id": "https://iiif.dc.library.northwestern.edu/iiif/3/5a1ee74b-6337-4bad-895f-603013e70988",
+                    "profile": "level2",
+                    "type": "ImageService2"
+                  }
+                ]
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/canvases/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/pages/text/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/pages/text/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Through accessible visuals, first-hand accounts, and satire, Atkinson’s Indian Spices for English Tables frames colonial experience in a consumable spectacle for British audiences. The book shows how British imperial power depended not only on political and military domination but on aesthetic practices that centered British authority in an orientalized, \"inferior” India. ",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/canvases/1#xywh=-1042,-471,12754,8860"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/pages/text/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "George Francklin Atkinson (1822-1859) was an English author, illustrator, and member of the\nBengal Engineers, an engineering unit of the East India Company’s army. Atkinson worked for the\nBengal Engineers from 1841 to 1859, and was there for the gruesome events of the Indian\nUprising, written in English sources as a Sepoy Rebellion or Mutiny of 1857. From 1854 onwards, Atkinson was the executive engineer for the Umballa (present name Ambala) division, building the artillery Mess House and St. Paul’s Church in Ambala. Atkinson wrote several satirical books documenting his experiences in India, writing Indian Spices for English Tables; The Campaign in India: 1857-58; and “Curry and Rice,” was an editor to The Delhi Sketch Book, and a contributor to the Illustrated London News and Leisure Hour.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/canvases/1#xywh=3953,2913,5923,3546"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/pages/text/1/annotation/2",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "The illustration centers Atkinson’s figure against “Out Special Correspondent,” emphasizing first-handedness and building authenticity through the overt identification of authorial voice. Bolstering the book’s sell of “authenticity,” on numerous plates Atkinson journals that he “records to a delighted posterity a vivid and graphic description of his…journey” (Plate 2), announcing to the reader that the observations are authentic to a real traveler in India. ",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/canvases/1#xywh=3218,3220,3554,2128"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/pages/text/1/annotation/3",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "The book was published on March 16th, 1860 by London-based Day & Son, one of the largest lithographic publishing houses of the nineteenth century. The book is not Day & Son's sole venture into colonialist literature—the final pages feature several advertisements for the publisher’s upcoming books about life in India. The genre’s “colonialist humor,” or satirical observations of Indian society in personal narratives written by Company officials, is present throughout as Atkinson exhibits both racist attitudes towards Indian people and admiration for some of their systems. His reference throughout the book to other Englishmen as “the knowing ones” reinforces this attitude. This style of paternalistic\nhumor disarms the reader and pushes soft propaganda to justify the “knowing” British presence\nin the foreign land.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/canvases/1#xywh=2194,4658,5126,3069"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/pages/text/1/annotation/4",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Throughout the book, Atkinson illustrates instances of shaky methods of transportation breaking down on the rugged terrain, risky attempts to ride exotic animals, and the dutiful service of many local Indian servants who accompany him throughout his arduous experiences in rural India. Described as \"obedient,\" locals are often shown in limited clothing and engaging in scenes of labor. ",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/canvases/1#xywh=-4,3413,5510,3299"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/pages/text/1/annotation/5",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Many scenes throughout the book present Indian society as chaotic, primitive, or lackadaisical. Fitting into a long legacy of “civilizing” justifications of imperialism, the book uses satire to emphasize the disorderliness of Indian society, rationalizing the need for British colonial intervention. ",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/3b83q/canvases/1#xywh=3356,2374,7381,4419"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": ["<p></p>"]
+  }
+}

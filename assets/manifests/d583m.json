@@ -1,0 +1,127 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://manifest.storiiies-editor.cogapp.com/v3/d583m",
+  "type": "Manifest",
+  "label": {
+    "en": ["Miniatures on Mica: Seated Woman Sewing"]
+  },
+  "items": [
+    {
+      "id": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/canvases/1",
+      "type": "Canvas",
+      "height": 2765,
+      "width": 2110,
+      "items": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/pages/image/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/annotations/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://storiiies-images.cogapp.com/iiif/2/1771001651550rectoseatedwomansewing1.ptif/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 2765,
+                "width": 2110,
+                "service": [
+                  {
+                    "id": "https://storiiies-images.cogapp.com/iiif/2/1771001651550rectoseatedwomansewing1.ptif",
+                    "profile": "level2",
+                    "type": "ImageService2"
+                  }
+                ]
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/canvases/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/pages/text/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/pages/text/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Possibly an Indian, folk-style, casual skirt called a ghagral. The brilliant Indian yellow is from the urine of cows solely fed mango leaves and outlines of white from lead.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/canvases/1#xywh=30,1552,1590,1029"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/pages/text/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Green background from a mix of Indigo with Indian yellow.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/canvases/1#xywh=-188,-145,2804,1814"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/pages/text/1/annotation/2",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "This subdued blue came from the storied, culturally rich Indigo dye.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/canvases/1#xywh=-84,672,2857,1848"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/pages/text/1/annotation/3",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "These small hits of red likely came from Red Lac, an insect-based natural dye, mixed with vermilion derived from the mineral cinnabar.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/canvases/1#xywh=722,1648,1567,1013"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/pages/text/1/annotation/4",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Subject's skin tone was from earth-based minerals ochre and/or sienna.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/d583m/canvases/1#xywh=881,833,607,1012"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": [
+      "<p>This miniature on the silicate mineral mica was made by an unknown Indian artist. Likely sold as part of a souvenir set, miniatures like these depicted occupational types of Indian subjects to feed into European exoticizing sensibilities.</p>"
+    ]
+  },
+  "requiredStatement": {
+    "label": {
+      "en": ["Attribution"]
+    },
+    "value": {
+      "en": [
+        "Courtesy of Charles Deering McCormick Library of Special Collections of Northwestern University Libraries"
+      ]
+    }
+  }
+}

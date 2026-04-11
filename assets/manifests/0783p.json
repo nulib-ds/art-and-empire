@@ -1,0 +1,117 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://manifest.storiiies-editor.cogapp.com/v3/0783p",
+  "type": "Manifest",
+  "label": {
+    "en": ["Tombs of the Kings of Golconda"]
+  },
+  "items": [
+    {
+      "id": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/canvases/1",
+      "type": "Canvas",
+      "height": 2340,
+      "width": 3000,
+      "items": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/pages/image/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/annotations/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://storiiies-images.cogapp.com/iiif/2/1771001701041recto.ptif/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 2340,
+                "width": 3000,
+                "service": [
+                  {
+                    "id": "https://storiiies-images.cogapp.com/iiif/2/1771001701041recto.ptif",
+                    "profile": "level2",
+                    "type": "ImageService2"
+                  }
+                ]
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/canvases/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/pages/text/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/pages/text/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Highly intricate lime stucco and plaster ornamentation on the tops of the tiered floors",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/canvases/1#xywh=408,770,1045,756"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/pages/text/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Edge of the Great Mosque seen in the right side",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/canvases/1#xywh=1967,764,1045,756"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/pages/text/1/annotation/2",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Access to the tombs was limited, which is why so many people wait on the ridge and only a few have access to the grounds",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/canvases/1#xywh=689,935,1045,756"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/pages/text/1/annotation/3",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Fallen over pieces columns and cornice show elements of ruination, typical of sublime works of the time",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/canvases/1#xywh=1594,1219,1045,756"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/pages/text/1/annotation/5",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "British officers talk as they overlook the scene.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/0783p/canvases/1#xywh=1175,1070,1045,756"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": [
+      "<p>Early 1800s landscape of overlooking the Qutb Shahi necropolis, tombs of the sultans of Golconda, who ruled the middle India province from 1518 to 1687.</p>"
+    ]
+  }
+}

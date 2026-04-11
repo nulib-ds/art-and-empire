@@ -1,0 +1,115 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://manifest.storiiies-editor.cogapp.com/v3/c083t",
+  "type": "Manifest",
+  "label": {
+    "en": ["An Indian woman burning herself on the death of her husband"]
+  },
+  "items": [
+    {
+      "id": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/canvases/1",
+      "type": "Canvas",
+      "height": 9074,
+      "width": 6103,
+      "items": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/pages/image/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/annotations/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.dc.library.northwestern.edu/iiif/3/96863b75-1f81-469f-94eb-850c5e6c75a1/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 9074,
+                "width": 6103,
+                "service": [
+                  {
+                    "id": "https://iiif.dc.library.northwestern.edu/iiif/3/96863b75-1f81-469f-94eb-850c5e6c75a1",
+                    "profile": "level2",
+                    "type": "ImageService2"
+                  }
+                ]
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/canvases/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/pages/text/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/pages/text/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "The procession of Suttee, with a mixed crowd of British soldiers alongside Indian men and women, gathered. ",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/canvases/1#xywh=507,2542,5339,3377"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/pages/text/1/annotation/1",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Indian artisans playing instruments beside British soldiers, as Suttee was often a ritual of celebration. ",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/canvases/1#xywh=2799,3800,2035,1287"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/pages/text/1/annotation/2",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Indian women supporting the widow on the Pyre.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/canvases/1#xywh=1369,3740,1659,1565"
+            },
+            {
+              "id": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/pages/text/1/annotation/4",
+              "type": "Annotation",
+              "motivation": "commenting",
+              "body": {
+                "type": "TextualBody",
+                "value": "Male Indian onlookers atop the hill.",
+                "language": "en",
+                "format": "text/plain"
+              },
+              "target": "https://manifest.storiiies-editor.cogapp.com/v3/c083t/canvases/1#xywh=1943,2478,1637,1357"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "en": [
+      "<p>An Indian woman, powerfully poised over her deceased husband’s burning pyre as part of the funeral ritual, Suttee.</p>"
+    ]
+  },
+  "requiredStatement": {
+    "label": {
+      "en": ["Attribution"]
+    },
+    "value": {
+      "en": [
+        "Courtesy of Charles Deering McCormick Library of Special Collections of Northwestern University Libraries; The Donald K. Adams and Lawrence D. Stewart Collection"
+      ]
+    }
+  }
+}
