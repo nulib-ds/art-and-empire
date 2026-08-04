@@ -163,6 +163,37 @@
   color: color-mix(in srgb, var(--color-gray-900) 92%, transparent);
 }
 
+.exhibit-panel + section[data-footnotes] {
+  background: var(--color-gray-50);
+  border-radius: 1.75rem;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  margin-top: 0;
+  border-top: none;
+}
+
+.exhibit-panel + section[data-footnotes] #footnote-label {
+  /* undo the sr-only hiding */
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  overflow: visible;
+  clip-path: none;
+  white-space: normal;
+
+  /* match the real h2 style used elsewhere (e.g. "Bibliography") */
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  font-size: 1.618rem;
+  line-height: 1.25;
+  margin: 0 0 1rem;
+
+  /* horizontal line above it, replacing the h2's usual top margin */
+  border-top: 1px solid var(--color-gray-200);
+  padding-top: 2rem;
+}
+
 .exhibit-intro__actions {
   margin-top: 0.5rem;
 }
